@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<meta name="publisher" content="" />
+<meta name="copyright" content="" />
+<meta name="creation_Date" content="02/12/2021" />
+<meta name="expires" content="" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<title>Premier Agent | House</title>
+
+<!--StyleSheet-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!--Javascript-->
+<script src="js/google.api.js" type="text/Javascript"></script>
+</head>
+
+<body>
+<div class="sticky-header-wrap sticky-header py-1 py-sm-2 py-lg-1">
+  <div class="container position-relative">
+    <div class="row align-items-center">
+      <div class="col-5 col-md-3">
+        <div class="logo"><a href="index.html">Premier Agent</a></div>
+      </div>
+      <div class="col-7 col-md-9 text-right position-static">
+        <nav class="main-menu menu-sticky1 d-none d-lg-block link-inherit mobile-menu-active">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Rent</a></li>
+            <li class="menu-item-has-children"><a href="service.html">Services</a>
+              <ul class="sub-menu">
+                <li><a href="service.html">Agent finder</a></li>
+                <li><a href="service-details.html">Services Details</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Manage Rentals</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="vs-menu-toggle text-theme border-theme d-inline-block d-lg-none"><i class="icofont-navigation-menu"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="vs-menu-wrapper">
+  <div class="vs-menu-area">
+    <button class="vs-menu-toggle text-theme"><i class="icofont-close"></i></button>
+    <div class="mobile-logo"><a href="index.html">Premier Agent</a></div>
+    <div class="vs-mobile-menu link-inherit"></div>
+  </div>
+</div>
+<header class="header-wrapper header-layout3 py-3 py-lg-0 px-85">
+  <div class="container-fluid position-relative">
+    <div class="row align-items-center">
+      <div class="col-xl-1 d-none d-xl-block">
+      </div>
+      <div class="col-md-5 col-xl-4 position-static d-none d-lg-block">
+        <nav class="main-menu menu-style2 text-center">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="land.html">Land</a></li>
+            <li class="active"><a href="house.html">House</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-6 col-lg-2 col-xl-2">
+        <div class="header-logo text-left text-lg-center pr-2"><a href="index.html">Premier Agent</a></div>
+      </div>
+      <div class="col-md-5 col-xl-4 position-static d-none d-lg-block">
+        <nav class="main-menu menu-style2 text-center">
+          <ul>
+            <li><a href="agent-finder.html">Agent Finder</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-xl-1 d-none d-xl-block">
+      </div>
+      <div class="col-6 d-block d-lg-none text-right">
+        <button type="button" class="vs-menu-toggle">
+          <span class="vs-menu-toggle-lines"></span>
+          </button>
+        <div class="mobile_signin">
+          <ul>
+            <li><a href="signin.html">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- header area start -->
+<section class="searcharea">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="top-field-require row">
+
+          <div class="multiselect-button col search-group">
+            <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Suburb,City">
+                  <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+          </div>
+
+          <div class="multiselect-button col">
+          <div class="form-group select-field field-type">
+            <select data-placeholder="Any Status" class="select-search" >
+                <option>All Property type </option> 
+                <option>Land</option>
+                <option>Houses</option>
+            </select>
+            </div>
+          </div>
+
+          <div class="multiselect-button col">
+          <div class="form-group select-field field-type">
+            <select data-placeholder="Any Status" class="select-search" >
+                <option>No of Bedrooms </option> 
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            </div>
+          </div>
+
+          <div class="multiselect-button col">
+          <div class="form-group select-field field-type">
+            <select data-placeholder="Any Status" class="select-search" >
+                <option>No of Rooms</option> 
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            </div>
+          </div>
+
+          <div class="multiselect-button col">
+          <div class="form-group select-field field-type">
+            <div class="input-group">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Price</button>
+             <ul class="dropdown-menu">
+                  <li>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                        <div class="form-group">
+                          <input type="email" onchange="initMap()" id="maxprice" class="form-control" aria-describedby="emailHelp" placeholder="Min. price">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" onchange="initMap()" id="minprice" class="form-control" aria-describedby="emailHelp" placeholder="Max. price">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                </ul>
+            </div>
+            </div>
+          </div>
+
+          <div class="multiselect-button col">
+          <div class="form-group select-field field-type">
+            <button class="btn btn-primary btn-search">Search</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- header area end -->
+
+<main class="inner-pages">
+  <section class="maplistarea">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+
+        <div class="map-col map-col-left">
+          <div class="maparea">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.32374892864!2d36.70730969849106!3d-1.3032050560946635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sng!4v1654771309287!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="map-col map-col-right">
+          <div class="listingBlock"> 
+            <div class="row align-items-center">
+              <div class="col-lg-12">
+                <div class="headingtitle">
+                  <h2>Nairobi Rental Listings</h2>
+                </div>
+              </div>
+            </div>
+            <!-- Sorting / Layout Switcher -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-6"> 
+                <!-- Sort by -->
+                <div class="results">
+                  <p>254 results</p>
+                </div>
+              </div>
+              <div class="col-6"> 
+                <nav class="viewnav">
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Map View</button>
+                    <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                      <div class="layout-switcher"> 
+                      <a href="#" class="grid"><i class="fa fa-th-large"></i></a> 
+                      <!-- <a href="#" class="list"><i class="fa fa-th-list"></i></a>  -->
+                    </div>
+                    </button>
+                  </div>
+                </nav>
+
+                <div class="sort-by">
+                  <label>Sort by:</label>
+                  <div class="sort-by-select">
+                    <select data-placeholder="Default order" class="chosen-select-no-single" >
+                      <option>Default Order</option>
+                      <option>Price Low to High</option>
+                      <option>Price High to Low</option>
+                      <option>Newest Properties</option>
+                      <option>Oldest Properties</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="maparea-inside">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.32374892864!2d36.70730969849106!3d-1.3032050560946635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sng!4v1654771309287!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+              <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                <!-- Listings -->
+            <div class="listings-container grid-layout"> 
+              
+              <!-- Listing Item -->
+              <div class="listing-item"> <div class="listing-img-container">
+                <div class="listing-badges"> <span class="featured">11 Hours Ago</span>
+                 <ul class="badge-btn">
+                  <li><button class="open"><i class="fas fa-share"></i></button></li>
+                   <li><button><i class="far fa-heart"></i></button></li>
+                 </ul>
+                </div>
+                <!--Share Pop Up-->
+                <div class="popup-overlay">
+                  <!--Creates the popup content-->
+                   <div class="popup-content">
+                    <!--popup's close button-->
+                      <button class="close"><i class="icofont-close-line"></i></button>
+                      <div class="share-social">
+                        <ul>
+                          <li><button><i class="fas fa-link"></i></button></li>
+                          <li><button><i class="fab fa-facebook-f"></i></button></li>
+                          <li><button><i class="fab fa-twitter"></i></button></li>
+                          <li><button><i class="fab fa-pinterest"></i></button></li>
+                          <li><button><i class="far fa-envelope"></i></button></li>
+                        </ul>
+                      </div>    
+                    </div>
+                </div>
+                <!-- End Share Pop up-->
+                <div class="listing-carousel owl-carousel owl-theme">
+                  <div><img src="images/listing-02.jpg" alt=""></div>
+                  <div><img src="images/listing-02.jpg" alt=""></div>
+                  <div><img src="images/listing-02.jpg" alt=""></div>
+                </div>
+                <!-- <img src="images/listing-02.jpg" alt=""> -->
+              </div>
+                <div class="listing-content">
+                  <div class="listing-title"> <span class="listing-price">Ksh 275,000 <i>Ksh 520 / sq ft</i></span>
+                    <ul class="listing-details">
+                      <li class="">4<abbr class="list-card-label"> <!-- -->bds</abbr></li>
+                      <li class="">3<abbr class="list-card-label"> <!-- -->ba</abbr></li>
+                      <li class="">1,386<abbr class="list-card-label"> <!-- -->sqft</abbr></li>
+                      <li class="list-card-statusText">- House for sale</li>
+                    </ul>
+                    <h4><a href="single-property.html">Eagle Apartments</a></h4>
+                    <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="listing-address popup-gmaps"> <i class="fa fa-map-marker"></i> 9364 School St. Lynchburg, NY </a> <a href="single-property-page-1.html" class="details button border">Details</a> </div>
+                </div>
+              </div>
+              <!-- Listing Item / End -->
+              <div class="listing-item"> <div class="listing-img-container">
+                <div class="listing-badges"> <span class="featured">11 Hours Ago</span>
+                  <ul class="badge-btn">
+                  <li><button class="open"><i class="fas fa-share"></i></button></li>
+                   <li><button><i class="far fa-heart"></i></button></li>
+                 </ul>
+                </div>
+                <!--Share Pop Up-->
+                <div class="popup-overlay">
+                  <!--Creates the popup content-->
+                   <div class="popup-content">
+                    <!--popup's close button-->
+                      <button class="close"><i class="icofont-close-line"></i></button>
+                      <div class="share-social">
+                        <ul>
+                          <li><button><i class="fas fa-link"></i></button></li>
+                          <li><button><i class="fab fa-facebook-f"></i></button></li>
+                          <li><button><i class="fab fa-twitter"></i></button></li>
+                          <li><button><i class="fab fa-pinterest"></i></button></li>
+                          <li><button><i class="far fa-envelope"></i></button></li>
+                        </ul>
+                      </div>    
+                    </div>
+                </div>
+                <!-- End Share Pop up-->
+                <a href="single-property.html">
+                <img src="images/listing-03.jpg" alt=""> 
+              </a>
+              </div>
+                <div class="listing-content">
+                  <div class="listing-title"> <span class="listing-price">Ksh 900 <i>monthly</i></span>
+                    <ul class="listing-details">
+                      <li>440 sq ft</li>
+                      <li>1 Bedroom</li>
+                      <li>1 Room</li>
+                      <li>1 Bathroom</li>
+                    </ul>
+                    <h4><a href="#">Serene Uptown</a></h4>
+                    <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="listing-address popup-gmaps"> <i class="fa fa-map-marker"></i> 6 Bishop Ave. Perkasie, PA </a> <a href="single-property-page-1.html" class="details button border">Details</a> </div>
+                </div>
+              </div>
+              <!-- Listing Item / End -->
+              <div class="listing-item"> <div class="listing-img-container">
+                <div class="listing-badges"> <span class="featured">11 Hours Ago</span>
+                  <ul class="badge-btn">
+                  <li><button class="open"><i class="fas fa-share"></i></button></li>
+                   <li><button><i class="far fa-heart"></i></button></li>
+                 </ul>
+                </div>
+                <!--Share Pop Up-->
+                <div class="popup-overlay">
+                  <!--Creates the popup content-->
+                   <div class="popup-content">
+                    <!--popup's close button-->
+                      <button class="close"><i class="icofont-close-line"></i></button>
+                      <div class="share-social">
+                        <ul>
+                          <li><button><i class="fas fa-link"></i></button></li>
+                          <li><button><i class="fab fa-facebook-f"></i></button></li>
+                          <li><button><i class="fab fa-twitter"></i></button></li>
+                          <li><button><i class="fab fa-pinterest"></i></button></li>
+                          <li><button><i class="far fa-envelope"></i></button></li>
+                        </ul>
+                      </div>    
+                    </div>
+                </div>
+                <!-- End Share Pop up-->
+                <a href="single-property.html"><img src="images/listing-05.jpg" alt=""></a> </div>
+                <div class="listing-content">
+                  <div class="listing-title"> <span class="listing-price">Ksh 900 <i>monthly</i></span>
+                    <ul class="listing-details">
+                      <li>440 sq ft</li>
+                      <li>1 Bedroom</li>
+                      <li>1 Room</li>
+                      <li>1 Bathroom</li>
+                    </ul>
+                    <h4><a href="#">Serene Uptown</a></h4>
+                    <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="listing-address popup-gmaps"> <i class="fa fa-map-marker"></i> 6 Bishop Ave. Perkasie, PA </a> <a href="single-property-page-1.html" class="details button border">Details</a> </div>
+                </div>
+              </div>
+              <!-- Listing Item / End --> 
+              <!-- Listing Item / End -->
+              <div class="listing-item"> <div class="listing-img-container">
+                <div class="listing-badges"> <span class="featured">11 Hours Ago</span>
+                  <ul class="badge-btn">
+                  <li><button class="open"><i class="fas fa-share"></i></button></li>
+                   <li><button><i class="far fa-heart"></i></button></li>
+                 </ul>
+                </div>
+                <!--Share Pop Up-->
+                <div class="popup-overlay">
+                  <!--Creates the popup content-->
+                   <div class="popup-content">
+                    <!--popup's close button-->
+                      <button class="close"><i class="icofont-close-line"></i></button>
+                      <div class="share-social">
+                        <ul>
+                          <li><button><i class="fas fa-link"></i></button></li>
+                          <li><button><i class="fab fa-facebook-f"></i></button></li>
+                          <li><button><i class="fab fa-twitter"></i></button></li>
+                          <li><button><i class="fab fa-pinterest"></i></button></li>
+                          <li><button><i class="far fa-envelope"></i></button></li>
+                        </ul>
+                      </div>    
+                    </div>
+                </div>
+                <!-- End Share Pop up-->
+                <a href="single-property.html"><img src="images/listing-06.jpg" alt=""></a> </div>
+                <div class="listing-content">
+                  <div class="listing-title"> <span class="listing-price">Ksh 900 <i>monthly</i></span>
+                    <ul class="listing-details">
+                      <li>440 sq ft</li>
+                      <li>1 Bedroom</li>
+                      <li>1 Room</li>
+                      <li>1 Bathroom</li>
+                    </ul>
+                    <h4><a href="#">Serene Uptown</a></h4>
+                    <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="listing-address popup-gmaps"> <i class="fa fa-map-marker"></i> 6 Bishop Ave. Perkasie, PA </a> <a href="single-property-page-1.html" class="details button border">Details</a> </div>
+                </div>
+              </div>
+              <!-- Listing Item / End --> 
+            </div>
+            <!-- Listings Container / End --> 
+            
+            <!-- Pagination -->
+            <div class="pagination-container">
+              <nav class="pager">
+                <ul>
+                  <li><a href="#" class="current-page">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li class="blank">...</li>
+                  <li><a href="#">22</a></li>
+                </ul>
+              </nav>
+              <nav class="pager-next-prev">
+                <ul>
+                  <li><a href="#" class="prev">Previous</a></li>
+                  <li><a href="#" class="next">Next</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- Pagination / End --> 
+                
+              </div>
+              <!-- <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div> -->
+            </div>
+            
+            
+          </div>
+          <footer class="footer-light footerlisting">
+            <div class="premier__copyright-area">
+                  <div class="container-fluid">
+                      <div class="row align-items-center">
+                          <div class="col-lg-12 col-12">
+                              <div class="premier__social-media text-center">
+                                  <ul>
+                                      <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                      <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                      <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                                      <li><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-lg-12 col-12 align-self-center">
+                              <div class="premier__copyright-menu text-center">
+                                  <ul>
+                                      <li><a href="#">Advertise with Us</a></li>
+                                      <li><a href="#">Agent Admin</a></li>
+                                      <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                                      <li><a href="privacy.html">Privacy &amp; Policy</a></li>
+                                      <li><a href="contacts.html">Contact Us</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-lg-12 col-12 text-center">
+                              <div class="premier__copyright-design">
+                                  <p>All Rights Reserved @ Company <span class="current-year">2022</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js" type="text/Javascript"></script>
+<script src="js/main.js" type="text/Javascript"></script>
+</body>
+
+</html>

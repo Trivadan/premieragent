@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<meta name="publisher" content="" />
+<meta name="copyright" content="" />
+<meta name="creation_Date" content="02/12/2021" />
+<meta name="expires" content="" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<title>Premier Agent | Agent Single</title>
+
+<!--StyleSheet-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!--Javascript-->
+<script src="js/google.api.js" type="text/Javascript"></script>
+</head>
+
+<body>
+<div class="sticky-header-wrap sticky-header py-1 py-sm-2 py-lg-1">
+  <div class="container position-relative">
+    <div class="row align-items-center">
+      <div class="col-5 col-md-3">
+        <div class="logo"><a href="index.html">Premier Agent</a></div>
+      </div>
+      <div class="col-7 col-md-9 text-right position-static">
+        <nav class="main-menu menu-sticky1 d-none d-lg-block link-inherit mobile-menu-active">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Rent</a></li>
+            <li class="menu-item-has-children"><a href="service.html">Services</a>
+              <ul class="sub-menu">
+                <li><a href="service.html">Agent finder</a></li>
+                <li><a href="service-details.html">Services Details</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Manage Rentals</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="vs-menu-toggle text-theme border-theme d-inline-block d-lg-none"><i class="icofont-navigation-menu"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="vs-menu-wrapper">
+  <div class="vs-menu-area">
+    <button class="vs-menu-toggle text-theme"><i class="icofont-close"></i></button>
+    <div class="mobile-logo"><a href="index.html">Premier Agent</a></div>
+    <div class="vs-mobile-menu link-inherit"></div>
+  </div>
+</div>
+<header class="header-wrapper header-layout3 py-3 py-lg-0 px-85">
+  <div class="container-fluid position-relative">
+    <div class="row align-items-center">
+      <div class="col-xl-1 d-none d-xl-block">
+      </div>
+      <div class="col-md-5 col-xl-4 position-static d-none d-lg-block">
+        <nav class="main-menu menu-style2 text-center">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="land.html">Land</a></li>
+            <li><a href="house.html">House</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-6 col-lg-2 col-xl-2">
+        <div class="header-logo text-left text-lg-center pr-2"><a href="index.html">Premier Agent</a></div>
+      </div>
+      <div class="col-md-5 col-xl-4 position-static d-none d-lg-block">
+        <nav class="main-menu menu-style2 text-center">
+          <ul>
+            <li class="active"><a href="agent-finder.html">Agent Finder</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-xl-1 d-none d-xl-block">
+      </div>
+      <div class="col-6 d-block d-lg-none text-right">
+        <button type="button" class="vs-menu-toggle">
+          <span class="vs-menu-toggle-lines"></span>
+          <!-- <i class="icofont-navigation-menu"></i> -->
+          </button>
+        <div class="mobile_signin">
+          <ul>
+            <li><a href="signin.html">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main class="inner-pages">
+<section class="agentbanner">
+  <div class="container">
+    <div class="row posr">
+      <div class="col-lg-10 mx-auto">
+        <div class="agentbanner_content">
+          <div class="agentbanner-text text-center">
+            <h2>Meet Trusted Professionals</h2>
+            <p>To get started, enter your loctaion or search for a specific agent by name.</p>
+            <!-- <p class="fz18 color-white">From as low as $10 per day with limited time offer discounts.</p> -->
+          </div>
+          <div class="agentsearch">
+            <div class="agentsearch-inner">
+                <ul class="row">
+                  <li class="col-lg-5">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter Agent Name">
+                      </div>
+                  </li>
+                  <li class="col-lg-5">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter an Agent City">
+                      </div>
+                  </li>
+                  <li class="col-lg-2">
+                    <div class="search_option_button">
+                        <button type="submit" class="btn btn-thm">Search</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Agent Single Grid View -->
+<section class="agentSection pt-12 pb-13">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Jennie Alexander"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Jennie Alexander</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Jennie Alexander"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Jennie Alexander</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Harriett Wallace"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Harriett Wallace</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Trevor Reid"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Trevor Reid</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Ernest Davis"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Ernest Davis</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Essie Singleton"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Essie Singleton</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Garrett Chambers"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Garrett Chambers</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Ivan Owen"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Ivan Owen</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Cornelia Cannon"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Cornelia Cannon</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Esther Santiago"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Esther Santiago</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Joey Tribbiani"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Joey Tribbiani</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <div class="card-header text-center"> 
+            <a href="agent-single.html" class="agent-img d-inline-block mb-2"> 
+              <img src="images/agent-01.jpg" alt="Cornelia Jackson"> </a> 
+              <a href="agent-finder.html" class="d-block agent-name">Cornelia Jackson</a>
+            <p class="mb-2 agent-title">Badges  <span class="text-warning ms-1"><i class="fa fa-award"></i></span></p>
+            <ul class="list-inline mb-0 agent-social">
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"> <i class="fab fa-skype"></i></a> </li>
+              <li class="list-inline-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </li>
+            </ul>
+          </div>
+          <div class="card-body text-center pt-2  px-0"> 
+            <a href="#" class="agent-email text-body">oliverbeddows@homeid.com</a> 
+            <a href="#" class="agent-phone text-heading d-block mb-3">123 900 68668</a>
+            <ul class="agent-rating list-inline mb-0">
+              <li class="list-inline-item fs-13 text-heading">4.8/5</li>
+              <li class="list-inline-item fs-13 text-heading mr-1">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                  <li class="list-inline-item m-0"> <span class="text-warning fs-12 lh-2"><i class="fas fa-star"></i></span> </li>
+                </ul>
+              </li>
+              <li class="list-inline-item fs-13 text-gray-light">(67 reviews)</li>
+            </ul>
+          </div>
+          <div class="card-footer px-0 text-center hover-image border-0"> 
+            <a href="listing-with-left-sidebar.html" class="d-flex align-items-center justify-content-center text-heading"> 
+              <span class="badge badge-white badge-circle border fs-13 font-weight-bold me-2 lh-12">5</span> 
+              <span class="footertext font-weight-500 mr-2">Listed Properties</span> 
+              <span class="icon"><i class="icofont-long-arrow-right"></i></span> 
+            </a> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="..." class="pt-3 text-center">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1"><i class="icofont-double-left"></i> Previous</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next <i class="icofont-double-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+    <div class="text-left mt-2 resultspager">8-14 of 45 Results</div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer-light">
+  <div class="premier__copyright-area">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-12">
+                    <div class="premier__social-media text-left">
+                        <ul>
+                            <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12 align-self-center">
+                    <div class="premier__copyright-menu text-center">
+                        <ul>
+                            <li><a href="#">Advertise with Us</a></li>
+                            <li><a href="#">Agent Admin</a></li>
+                            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                            <li><a href="privacy.html">Privacy &amp; Policy</a></li>
+                            <li><a href="contacts.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="premier__copyright-design">
+                        <p>All Rights Reserved @ Company <span class="current-year">2022</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js" type="text/Javascript"></script>
+<script src="js/main.js" type="text/Javascript"></script>
+</body>
+
+</html>
