@@ -182,7 +182,7 @@
         })
 
     $('.listing-carousel').owlCarousel({
-       loop:false,
+        loop:false,
         margin:15,
         dots:false,
         nav:true,
@@ -227,6 +227,101 @@
         Nice Select
     --------------------------------------------------------- */
     $('select').niceSelect();
+
+    /*----------------------------------------------------*/
+    /*  Show More Button
+    /*----------------------------------------------------*/
+    $('.show-more-button').on('click', function(e){
+        e.preventDefault();
+        $('.show-more').toggleClass('visible');
+    });
+
+    $('.listing-carousel').owlCarousel({
+        loop:false,
+        margin:15,
+        dots:false,
+        nav:true,
+        rtl:false,
+        autoplayHoverPause:false,
+        autoplay: false,
+        smartSpeed: 2000,
+        singleItem: true,
+        items:1,
+        navText: [
+          '<i class="icofont-simple-left"></i>',
+          '<i class="icofont-simple-right"></i>'
+        ],
+        itemsDesktop : [1239,1],
+        itemsTablet : [991,1],
+        itemsMobile : [767,1]
+    });
+
+    /*----------------------------------------------------*/
+    /*  Accordions
+    /*----------------------------------------------------*/
+    var $accor = $('.accordion');
+
+     $accor.each(function() {
+         $(this).toggleClass('ui-accordion ui-widget ui-helper-reset');
+         $(this).find('h3').addClass('ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all');
+         $(this).find('div').addClass('ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom');
+         $(this).find("div").hide();
+    });
+
+    var $trigger = $accor.find('h3');
+
+    $trigger.on('click', function(e) {
+         var location = $(this).parent();
+
+         if( $(this).next().is(':hidden') ) {
+              var $triggerloc = $('h3',location);
+              $triggerloc.removeClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideUp(300);
+              $triggerloc.find('span').removeClass('ui-accordion-icon-active');
+              $(this).find('span').addClass('ui-accordion-icon-active');
+              $(this).addClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideDown(300);
+         }
+         else if( $(this).is(':visible') ) {
+              var $triggerloc = $('h3',location);
+              $triggerloc.removeClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideUp(300);
+              $triggerloc.find('span').removeClass('ui-accordion-icon-active');
+         }
+          e.preventDefault();
+    });
+
+    /*-------------------------------------
+      Swiper Js
+    -------------------------------------*/
+    var featureBoxSlider = new Swiper(".featured-thum-slider2", {
+    spaceBetween: 5,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 5,
+      },
+    },
+    });
+    var featuredBoxThumbs = new Swiper(".feature-box3", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    thumbs: {
+      swiper: featureBoxSlider,
+    },
+    });
+
+   /*-------------------------------------
+      Product Image Zoom Js
+   -------------------------------------*/
+  $('.zoom-image-hover').zoom();
 
 
 })(window.jQuery);

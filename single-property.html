@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<meta name="publisher" content="" />
+<meta name="copyright" content="" />
+<meta name="creation_Date" content="02/12/2021" />
+<meta name="expires" content="" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<title>Premier Agent | Single Property</title>
+
+<!--StyleSheet-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!--Javascript-->
+<script src="js/google.api.js" type="text/Javascript"></script>
+</head>
+
+<body>
+<div class="sticky-header-wrap sticky-header py-1 py-sm-2 py-lg-1">
+  <div class="container position-relative">
+    <div class="row align-items-center">
+      <div class="col-5 col-md-3">
+        <div class="logo"><a href="index.html">Premier Agent</a></div>
+      </div>
+      <div class="col-7 col-md-9 text-right position-static">
+        <nav class="main-menu menu-sticky1 d-none d-lg-block link-inherit mobile-menu-active">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Rent</a></li>
+            <li class="menu-item-has-children"><a href="service.html">Services</a>
+              <ul class="sub-menu">
+                <li><a href="service.html">Agent finder</a></li>
+                <li><a href="service-details.html">Services Details</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Manage Rentals</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="vs-menu-toggle text-theme border-theme d-inline-block d-lg-none"><i class="icofont-navigation-menu"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="vs-menu-wrapper">
+  <div class="vs-menu-area">
+    <button class="vs-menu-toggle text-theme"><i class="icofont-close"></i></button>
+    <div class="mobile-logo"><a href="index.html">Premier Agent</a></div>
+    <div class="vs-mobile-menu link-inherit"></div>
+  </div>
+</div>
+<header class="header-wrapper header-layout3 py-3 py-lg-0 px-85">
+  <div class="container-fluid position-relative">
+    <div class="row align-items-center">
+      <div class="col-xl-1 d-none d-xl-block">
+      </div>
+      <div class="col-md-5 col-xl-4 position-static d-none d-lg-block">
+        <nav class="main-menu menu-style2 text-center">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li class="active"><a href="land.html">Land</a></li>
+            <li><a href="house.html">House</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-6 col-lg-2 col-xl-2">
+        <div class="header-logo text-left text-lg-center pr-2"><a href="index.html">Premier Agent</a></div>
+      </div>
+      <div class="col-md-5 col-xl-4 position-static d-none d-lg-block">
+        <nav class="main-menu menu-style2 text-center">
+          <ul>
+            <li><a href="agent-finder.html">Agent Finder</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-xl-1 d-none d-xl-block">
+      </div>
+      <div class="col-6 d-block d-lg-none text-right">
+        <button type="button" class="vs-menu-toggle">
+          <span class="vs-menu-toggle-lines"></span>
+          </button>
+        <div class="mobile_signin">
+          <ul>
+            <li><a href="signin.html">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="inner-pages">
+<!-- Titlebar
+================================================== -->
+<div id="titlebar" class="property-titlebar margin-bottom-0">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-6">
+        <!-- <a href="listings-list-with-sidebar.html" class="back-to-listings"></a> -->
+        <div class="property-title">
+          <h2>Selway Apartments <span class="property-badge">For Sale</span></h2>
+          <span>
+            <a href="#location" class="listing-address">
+              <i class="fa fa-map-marker"></i>
+              7843 Durham Avenue, MD
+            </a>
+          </span>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="property-pricing">
+          <div class="property-price">Ksh 3,420,000</div>
+          <div class="sub-price">Ksh 100,000 / sq ft</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<section class="propery-single our-agent-single">
+<div class="container">
+  <div class="row">
+
+    <!-- Property Description -->
+    <div class="col-lg-8 col-md-7">
+      <div class="propertyslider">
+        <div class="featured-thumb-slider-area fadeInUp">
+          <div class="feature-box3 swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="feature-img1 zoom-image-hover"> <img src="images/blog/product1-1.jpg" alt="feature" width="798" height="420" /> </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feature-img1 zoom-image-hover"> <img src="images/blog/product3.jpg" alt="feature" width="798" height="420" /> </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feature-img1 zoom-image-hover"> <img src="images/blog/product4.jpg" alt="feature" width="798" height="420" /> </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feature-img1 zoom-image-hover"> <img src="images/blog/product5.jpg" alt="feature" width="798" height="420" /> </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feature-img1 zoom-image-hover"> <img src="images/blog/product6.jpg" alt="feature" width="798" height="420" /> </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-thum-slider2 swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-img"> <img src="images/blog/product2.jpg" alt="feature" width="154" height="100" /> </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-img"> <img src="images/blog/product7.jpg" alt="feature" width="154" height="100" /> </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-img"> <img src="images/blog/product8.jpg" alt="feature" width="154" height="100" /> </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-img"> <img src="images/blog/product9.jpg" alt="feature" width="154" height="100" /> </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-img"> <img src="images/blog/product10.jpg" alt="feature" width="154" height="100" /> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="property-description">
+
+        <!-- Main Features -->
+        <ul class="property-main-features">
+          <li>Area <span>1450 sq ft</span></li>
+          <li>Rooms <span>4</span></li>
+          <li>Bedrooms <span>2</span></li>
+          <li>Bathrooms <span>1</span></li>
+        </ul>
+
+
+        <!-- Description -->
+        <h3 class="desc-headline">Description</h3>
+        <div class="show-more">
+          <p>
+            Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Sed fermentum, lorem vitae efficitur imperdiet, neque velit tristique turpis, et iaculis mi tortor finibus turpis. 
+          </p>
+
+          <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra a. Aliquam pellentesque nibh et nibh feugiat gravida. Maecenas ultricies, diam vitae semper placerat, velit risus accumsan nisl, eget tempor lacus est vel nunc. Proin accumsan elit sed neque euismod fringilla. Curabitur lobortis nunc velit, et fermentum urna dapibus non. Vivamus magna lorem, elementum id gravida ac, laoreet tristique augue. Maecenas dictum lacus eu nunc porttitor, ut hendrerit arcu efficitur.
+          </p>
+
+          <p>
+            Nam mattis lobortis felis eu blandit. Morbi tellus ligula, interdum sit amet ipsum et, viverra hendrerit lectus. Nunc efficitur sem vel est laoreet, sed bibendum eros viverra. Vestibulum finibus, ligula sed euismod tincidunt, lacus libero lobortis ligula, sit amet molestie ipsum purus ut tortor. Nunc varius, dui et sollicitudin facilisis, erat felis imperdiet felis, et iaculis dui magna vitae diam. Donec mattis diam nisl, quis ullamcorper enim malesuada non. Curabitur lobortis eu mauris nec vestibulum. Nam efficitur, ex ac semper malesuada, nisi odio consequat dui, hendrerit vulputate odio dui vitae massa. Aliquam tortor urna, tincidunt ut euismod quis, semper vel ipsum. Ut non vestibulum mauris. Morbi euismod, felis non hendrerit viverra, nunc sapien bibendum ligula, eget vehicula nunc dolor eu ex. Quisque in semper odio. Donec auctor blandit ligula. Integer id lectus non nibh vulputate efficitur quis at arcu.
+          </p>
+
+          <a href="#" class="show-more-button">Show More <i class="fa fa-angle-down"></i></a>
+        </div>
+
+        <!-- Details -->
+        <!-- <h3 class="desc-headline">Details</h3>
+        <ul class="property-features margin-top-0">
+          <li>Building Age: <span>2 Years</span></li>
+          <li>Parking: <span>Attached Garage</span></li>
+          <li>Cooling: <span>Central Cooling</span></li>
+          <li>Heating: <span>Forced Air, Gas</span></li>
+          <li>Sewer: <span>Public/City</span></li>
+          <li>Water: <span>City</span></li>
+          <li>Exercise Room: <span>Yes</span></li>
+          <li>Storage Room: <span>Yes</span></li>
+        </ul> -->
+
+
+        <!-- Features -->
+        <h3 class="desc-headline">Features</h3>
+        <ul class="property-features checkboxes margin-top-0">
+          <li>Air Conditioning</li>
+          <li>Swimming Pool</li>
+          <li>Central Heating</li>
+          <li>Laundry Room</li>
+          <li>Gym</li>
+          <li>Alarm</li>
+          <li>Window Covering</li>
+          <li>Internet</li>
+        </ul>
+
+        
+        <!-- Floorplans -->
+       <!--  <h3 class="desc-headline no-border">Floorplans</h3>
+        <div class="style-1 fp-accordion">
+          <div class="accordion">
+
+            <h3>First Floor <span>460 sq ft</span> <i class="fa fa-angle-down"></i> </h3>
+            <div>
+            <a class="floor-pic mfp-image" href="https://i.imgur.com/kChy7IU.jpg">
+              <img src="https://i.imgur.com/kChy7IU.jpg" alt="">
+            </a>
+            <p>Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate aliquam egestas litora torquent conubia.</p>
+            </div>
+
+            <h3>Second Floor <span>440 sq ft</span> <i class="fa fa-angle-down"></i></h3>
+            <div>
+              <a class="floor-pic mfp-image" href="https://i.imgur.com/l2VNlwu.jpg">
+                <img src="https://i.imgur.com/l2VNlwu.jpg" alt="">
+              </a>
+              <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. Nullam laoreet, velit ut taciti sociosqu condimentum feugiat.</p>
+            </div>
+
+            <h3>Garage <span>140 sq ft</span> <i class="fa fa-angle-down"></i></h3>
+            <div>
+              <a class="floor-pic mfp-image" href="https://i.imgur.com/0zJYERy.jpg">
+                <img src="https://i.imgur.com/0zJYERy.jpg" alt="">
+              </a>
+            </div>
+
+          </div>
+        </div> -->
+
+
+        <!-- Video -->
+        <!-- <h3 class="desc-headline no-border">Video</h3>
+        <div class="responsive-iframe">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UPBJKppEXoQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div> -->
+
+        <!-- Location -->
+        <h3 class="desc-headline no-border" id="location">Location</h3>
+        <div id="propertyMap-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.32374892864!2d36.70730969849106!3d-1.3032050560946635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sng!4v1654771309287!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!-- <div id="propertyMap" data-latitude="40.7427837" data-longitude="-73.11445617675781"></div> -->
+          <a href="#" id="streetView">Street View</a>
+        </div>
+
+
+        <!-- Similar Listings Container -->
+        <h3 class="desc-headline no-border margin-bottom-35 margin-top-60">Similar Properties</h3>
+
+        <!-- Layout Switcher -->
+
+        <div class="layout-switcher hidden"><a href="#" class="list"><i class="fa fa-th-list"></i></a></div>
+        <div class="listings-container grid-layout">
+
+          <!-- Listing Item -->
+              <div class="listing-item"> <div class="listing-img-container">
+                <div class="listing-badges"> <span class="featured">11 Hours Ago</span>
+                 <ul class="badge-btn">
+                  <li><button class="open"><i class="fas fa-share"></i></button></li>
+                   <li><button><i class="far fa-heart"></i></button></li>
+                 </ul>
+                </div>
+                <!--Share Pop Up-->
+                <div class="popup-overlay">
+                  <!--Creates the popup content-->
+                   <div class="popup-content">
+                    <!--popup's close button-->
+                      <button class="close"><i class="icofont-close-line"></i></button>
+                      <div class="share-social">
+                        <ul>
+                          <li><button><i class="fas fa-link"></i></button></li>
+                          <li><button><i class="fab fa-facebook-f"></i></button></li>
+                          <li><button><i class="fab fa-twitter"></i></button></li>
+                          <li><button><i class="fab fa-pinterest"></i></button></li>
+                          <li><button><i class="far fa-envelope"></i></button></li>
+                        </ul>
+                      </div>    
+                    </div>
+                </div>
+                <!-- End Share Pop up-->
+                <div class="listing-carousel owl-carousel owl-theme">
+                  <div><img src="images/listing-02.jpg" alt=""></div>
+                  <div><img src="images/listing-02.jpg" alt=""></div>
+                  <div><img src="images/listing-02.jpg" alt=""></div>
+                </div>
+                <!-- <img src="images/listing-02.jpg" alt=""> -->
+              </div>
+                <div class="listing-content">
+                  <div class="listing-title"> <span class="listing-price">Ksh 275,000 <i>Ksh 520 / sq ft</i></span>
+                    <ul class="listing-details">
+                      <li class="">4<abbr class="list-card-label"> <!-- -->bds</abbr></li>
+                      <li class="">3<abbr class="list-card-label"> <!-- -->ba</abbr></li>
+                      <li class="">1,386<abbr class="list-card-label"> <!-- -->sqft</abbr></li>
+                      <li class="list-card-statusText">- House for sale</li>
+                    </ul>
+                    <h4><a href="single-property.html">Eagle Apartments</a></h4>
+                    <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="listing-address popup-gmaps"> <i class="fa fa-map-marker"></i> 9364 School St. Lynchburg, NY </a> <a href="single-property-page-1.html" class="details button border">Details</a> </div>
+                </div>
+              </div>
+              <!-- Listing Item / End -->
+              <div class="listing-item"> <div class="listing-img-container">
+                <div class="listing-badges"> <span class="featured">11 Hours Ago</span>
+                  <ul class="badge-btn">
+                  <li><button class="open"><i class="fas fa-share"></i></button></li>
+                   <li><button><i class="far fa-heart"></i></button></li>
+                 </ul>
+                </div>
+                <!--Share Pop Up-->
+                <div class="popup-overlay">
+                  <!--Creates the popup content-->
+                   <div class="popup-content">
+                    <!--popup's close button-->
+                      <button class="close"><i class="icofont-close-line"></i></button>
+                      <div class="share-social">
+                        <ul>
+                          <li><button><i class="fas fa-link"></i></button></li>
+                          <li><button><i class="fab fa-facebook-f"></i></button></li>
+                          <li><button><i class="fab fa-twitter"></i></button></li>
+                          <li><button><i class="fab fa-pinterest"></i></button></li>
+                          <li><button><i class="far fa-envelope"></i></button></li>
+                        </ul>
+                      </div>    
+                    </div>
+                </div>
+                <!-- End Share Pop up-->
+                <a href="single-property.html">
+                <img src="images/listing-03.jpg" alt=""> 
+              </a>
+              </div>
+                <div class="listing-content">
+                  <div class="listing-title"> <span class="listing-price">Ksh 900 <i>monthly</i></span>
+                    <ul class="listing-details">
+                      <li>440 sq ft</li>
+                      <li>1 Bedroom</li>
+                      <li>1 Room</li>
+                      <li>1 Bathroom</li>
+                    </ul>
+                    <h4><a href="#">Serene Uptown</a></h4>
+                    <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&hl=en&t=v&hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom" class="listing-address popup-gmaps"> <i class="fa fa-map-marker"></i> 6 Bishop Ave. Perkasie, PA </a> <a href="single-property-page-1.html" class="details button border">Details</a> </div>
+                </div>
+              </div>
+              <!-- Listing Item / End -->
+
+        </div>
+        <!-- Similar Listings Container / End -->
+
+        <section class="cardarea">
+                  <div class="card-inside">
+
+                    <div class="shop_single_tab_content style2 mt30">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                      <a class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" role="tab" aria-controls="description" aria-selected="true">Comments</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="listing-tab" data-bs-toggle="tab" data-bs-target="#listing" role="tab" aria-controls="listing" aria-selected="false">Write a review</a>
+                  </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent2">
+                  <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                    <div class="product_single_content">
+                      <div class="mbp_pagination_comments">
+                        <ul class="total_reivew_view">
+                          <li class="list-inline-item sub_titles">896 Reviews</li>
+                          <li class="list-inline-item">
+                            <ul class="star_list">
+                              <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                            </ul>
+                          </li>
+                          <li class="list-inline-item avrg_review">( 4.5 out of 5 )</li>
+                          <li class="list-inline-item write_review">Write a Review</li>
+                        </ul>
+                        <div class="mbp_first media">
+                          <img src="images/testimonial-01.png" class="mr-3" alt="1.png">
+                          <div class="media-body">
+                              <h4 class="sub_title mt-0">Diana Cooper
+                              <div class="sspd_review dif">
+                                <ul class="mb-2">
+                                  <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                  <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                  <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                  <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                  <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                  <li class="list-inline-item"></li>
+                                </ul>
+                              </div>
+                              </h4>
+                              <a class="sspd_postdate fz14" href="#">December 28, 2020</a>
+                              <p class="mt10">Beautiful home, very picturesque and close to everything in jtree! A little warm for a hot weekend, but would love to come back during the cooler seasons!</p>
+                          </div>
+                        </div>
+                        <div class="custom_hr"></div>
+                        <div class="mbp_first media">
+                          <img src="images/testimonial-01.png" class="mr-3" alt="2.png">
+                          <div class="media-body">
+                              <h4 class="sub_title mt-0">Ali Tufan
+                              <div class="sspd_review dif">
+                                <ul class="mb-2">
+                                  <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                  <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                  <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                  <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                  <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                  <li class="list-inline-item"></li>
+                                </ul>
+                              </div>
+                              </h4>
+                              <a class="sspd_postdate fz14" href="#">December 28, 2020</a>
+                              <p class="mt10">Beautiful home, very picturesque and close to everything in jtree! A little warm for a hot weekend, but would love to come back during the cooler seasons!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade row pl15 pl0-1199 pr15 pr0-1199" id="listing" role="tabpanel" aria-labelledby="listing-tab">
+                    <div class="col-lg-12">
+                      <div class="mbp_comment_form style2">
+                          <h4>Write a Review</h4>
+                          <ul class="sspd_review">
+                            <li class="list-inline-item">
+                              <ul class="mb0">
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                              </ul>
+                            </li>
+                            <li class="list-inline-item review_rating_para">Your Rating & Review</li>
+                          </ul>
+                          <form class="comments_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputName1" aria-describedby="textHelp" placeholder="Review Title">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="12" placeholder="Your Review"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-thm">Submit Review <span class="flaticon-right-arrow-1"></span></button>
+                          </form>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                    
+                  </div>
+                </div>
+              </div>
+
+
+                  </div>
+                </section>
+
+      </div>
+    </div>
+    <!-- Property Description / End -->
+
+
+    <!-- Sidebar -->
+    <div class="col-lg-4 col-md-5">
+      <div class="sidebar-main sticky right sidebar_listing_grid1">
+
+        <!-- Widget -->
+        <div class="widget margin-bottom-30">
+          <ul class="mb0 spss">
+            <!-- <li><a href="#"><span class="flaticon-transfer-1"></span></a></li> -->
+            <li><a href="#"><i class="icofont-heart"></i></a></li>
+            <li><a href="#"><i class="icofont-share"></i></a></li>
+            <li><a href="#"><i class="icofont-print"></i></a></li>
+            <li><a href="#"><i class="icofont-flag"></i></a></li>
+          </ul>
+          <!-- <button class="widget-button with-tip" data-tip-content="Print"><i class="sl sl-icon-printer"></i></button>
+          <button class="widget-button with-tip" data-tip-content="Add to Bookmarks"><i class="fa fa-star-o"></i></button>
+          <button class="widget-button with-tip compare-widget-button" data-tip-content="Add to Compare"><i class="icon-compare"></i></button> -->
+          <div class="clearfix"></div>
+        </div>
+        <!-- Widget / End -->
+
+        <!-- Widget -->
+        <div class="widget">
+
+          <!-- Agent Widget -->
+          <div class="agent-widget">
+            <div class="agent-title">
+              <div class="agent-photo"><img src="images/agent-avatar.jpg" alt="" /></div>
+              <div class="agent-details">
+                <h4><a href="#">Jennie Wilson</a></h4>
+                <span><i class="icofont-phone"></i>(123) 123-456</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <ul class="wid-contact-button">
+                <li><a href="single-listing1.html"><i class="fa fa-phone"></i>0712406060</a></li>
+                <li><a href="single-listing1.html"><i class="fab fa-whatsapp"></i>Whatsapp</a></li>
+            </ul>
+            <div class="form-group">
+            <input type="text" placeholder="Your Name" class="form-control">
+          </div>
+            <div class="form-group">
+            <input type="email" placeholder="Your Email" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Your Phone" class="form-control">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control">I'm interested in this property [ID 123456] and I'd like to know more details.</textarea>
+          </div>
+          <div class="form-group">
+            <label class="labelcehck--fill"><input type="checkbox" class="mr-1" name="email_me_about_similar_properties" value="1">
+              <span>I Agree to Premier Agent <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a></span></label>
+          </div>
+          <div class="form-group">
+            <button class="btn-send w-100 mt-3 btn btn-primary">Contact the Agent</button>
+          </div>
+          </div>
+          <!-- Agent Widget / End -->
+
+        </div>
+        <!-- Widget / End -->
+
+        <div class="widget">
+          <div class="terms_condition_widget">
+              <h4 class="title">Featured Properties</h4>
+              <div class="sidebar_feature_property_slider owl-carousel owl-theme">
+                <div class="item">
+                  <div class="feat_property home7 agent">
+                    <div class="thumb">
+                      <img class="img-whp" src="images/feaatured-side-pic.jpg" alt="fp1.jpg">
+                      <div class="thmb_cntnt">
+                        <ul class="tag mb0">
+                          <li class="list-inline-item"><a href="#">For Rent</a></li>
+                          <li class="list-inline-item"><a href="#">Featured</a></li>
+                        </ul>
+                        <a class="fp_price" href="#">$13,000<small>/mo</small></a>
+                        <h4 class="posr color-white">Renovated Apartment</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="feat_property home7 agent">
+                    <div class="thumb">
+                      <img class="img-whp" src="images/feaatured-side-pic.jpg" alt="fp2.jpg">
+                      <div class="thmb_cntnt">
+                        <ul class="tag mb0">
+                          <li class="list-inline-item"><a href="#">For Rent</a></li>
+                          <li class="list-inline-item"><a href="#">Featured</a></li>
+                        </ul>
+                        <a class="fp_price" href="#">$13,000<small>/mo</small></a>
+                        <h4 class="posr color-white">Renovated Apartment</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="feat_property home7 agent">
+                    <div class="thumb">
+                      <img class="img-whp" src="images/feaatured-side-pic.jpg" alt="fp3.jpg">
+                      <div class="thmb_cntnt">
+                        <ul class="tag mb0">
+                          <li class="list-inline-item"><a href="#">For Rent</a></li>
+                          <li class="list-inline-item"><a href="#">Featured</a></li>
+                        </ul>
+                        <a class="fp_price" href="#">$13,000<small>/mo</small></a>
+                        <h4 class="posr color-white">Renovated Apartment</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Sidebar / End -->
+
+  </div>
+</div>
+
+</section>
+</main>
+
+<footer class="footer-light">
+  <div class="premier__copyright-area">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-12">
+                    <div class="premier__social-media text-left">
+                        <ul>
+                            <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12 align-self-center">
+                    <div class="premier__copyright-menu text-center">
+                        <ul>
+                            <li><a href="#">Advertise with Us</a></li>
+                            <li><a href="#">Agent Admin</a></li>
+                            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                            <li><a href="privacy.html">Privacy &amp; Policy</a></li>
+                            <li><a href="contacts.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="premier__copyright-design">
+                        <p>All Rights Reserved @ Company <span class="current-year">2022</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js" type="text/Javascript"></script>
+<script src="js/main.js" type="text/Javascript"></script>
+</body>
+
+</html>
