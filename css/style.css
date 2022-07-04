@@ -8549,6 +8549,10 @@ blockquote {
     padding: 6px 10px;
     font-size: 14px;
 }
+.d-mobile-none,
+.top-profile-section{
+    display: none;
+}
 }
 @media screen and (max-width:390px){
 }
