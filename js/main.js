@@ -321,7 +321,247 @@
    /*-------------------------------------
       Product Image Zoom Js
    -------------------------------------*/
-  $('.zoom-image-hover').zoom();
+   $('.zoom-image-hover').zoom();
+
+     /*=====================
+      Image to background js
+      ==========================*/
+
+    $(".bg-top").parent().addClass('b-top'); // background postion top
+    $(".bg-bottom").parent().addClass('b-bottom'); // background postion bottom
+    $(".bg-center").parent().addClass('b-center'); // background postion center
+    $(".bg-left").parent().addClass('b-left'); // background postion left
+    $(".bg-right").parent().addClass('b-right'); // background postion right
+    $(".bg_size_content").parent().addClass('b_size_content'); // background size content
+    $(".bg-img").parent().addClass('bg-size');
+    $(".bg-img.blur-up").parent().addClass('blur-up lazyload');
+    $('.bg-img').each(function() {
+
+        var el = $(this),
+            src = el.attr('src'),
+            parent = el.parent();
+
+
+        parent.css({
+            'background-image': 'url(' + src + ')',
+            'background-size': 'cover',
+            'background-position': 'center',
+            'background-repeat': 'no-repeat',
+            'display': 'block'
+        });
+
+        el.hide();
+    });
+
+    /*=====================
+     Favourite add js
+    ==========================*/
+
+    $(".favourite-btn").on("click", function() {
+        $(this).toggleClass("active");
+    });
+
+    /*========================
+    Create post js
+    ==========================*/
+
+    $(".create-post").on("click", function() {
+        $(this).addClass("active");
+    });
+
+
+    $("#create-overlay").on("click", function() {
+        $("body").addClass("create-overlay");
+    });
+
+    $(".close-btn").on("click", function() {
+        $("body").removeClass("create-overlay");
+        $(".create-post ").removeClass("active");
+    });
+
+
+    var myValue;
+
+    function clickGradient(val) {
+        myValue = val;
+    }
+    $(".gradient-bg li").on("click", function() {
+        $(".static-section").addClass("d-none");
+        $("#bg-post").removeClass();
+        $("#bg-post").addClass("bg-post d-block  " + myValue)
+    });
+
+    $("#bg-post .close-icon").on("click", function() {
+        $(".static-section").removeClass("d-none");
+        $("#bg-post").removeClass();
+        $("#bg-post").addClass("bg-post");
+        $('.Disable').prop("disabled", true);
+    });
+
+
+    $(".modal .gradient-bg li").on("click", function() {
+        $(".modal .static-section").addClass("d-none");
+        $("#bg-post1").removeClass();
+        $("#bg-post1").addClass("bg-post d-block  " + myValue)
+    });
+
+    $("#bg-post1 .close-icon").on("click", function() {
+        $(".modal .static-section").removeClass("d-none");
+        $("#bg-post1").removeClass();
+        $("#bg-post1").addClass("bg-post");
+        $('.Disable').prop("disabled", true);
+    });
+
+    $(".enable").click(function(event) {
+        event.preventDefault();
+        $('.Disable').prop("disabled", false);
+        $('.post-btn').addClass("d-block")
+    });
+
+    var content_width = jQuery(window).width();
+    if ((content_width) <= '576') {
+        $(".create-post").on("click", function() {
+            $(".overlay-bg").addClass("show");
+            $('body').css({
+                'overflow': 'hidden',
+            });
+        });
+        $(".overlay-bg").on("click", function() {
+            $(".overlay-bg").removeClass("show");
+            $("#bg-post").removeClass();
+            $("#bg-post").addClass("bg-post");
+            $('body').css({
+                'overflow': 'auto',
+            });
+        });
+
+    }
+
+    // additional input 
+    $("#feeling-btn").on("click", function(){
+        $("#additional-input").addClass("feeling");
+        $("#additional-input").removeClass("place");
+        $("#additional-input").removeClass("friends");
+        var feeling_activity = $( "#additional-input .feeling-input .form-control").val()
+    })
+    $("#checkin-btn").on("click", function(){
+        $("#additional-input").addClass("place");
+        $("#additional-input").removeClass("feeling");
+        $("#additional-input").removeClass("friends");
+    })
+    $("#friends-btn").on("click", function(){
+        $("#additional-input").addClass("friends");
+        $("#additional-input").removeClass("feeling");
+        $("#additional-input").removeClass("place");
+    })
+    $("#icon-close").on("click", function(){
+        $("#additional-input").removeClass("friends");
+        $("#additional-input").removeClass("feeling");
+        $("#additional-input").removeClass("place");
+    })
+
+
+    /*========================
+     App Btn js
+    ==========================*/
+    $(".app-btn a").on("click", function() {
+        $(".app-btn .app-box").addClass("show");
+        $(".app-overlay").addClass("show");
+        $('body').css({
+            'overflow': 'hidden',
+        });
+    });
+    $(".app-overlay").on("click", function() {
+        $(".app-btn .app-box").removeClass("show");
+        $(".app-overlay").removeClass("show");
+        $('body').css({
+            'overflow': 'auto',
+        });
+    });
+
+
+    /*========================
+    React panel js
+    ==========================*/
+
+    $(".react-click").on("click", function() {
+        $(this).parents(".react-btn").find(".react-box").toggleClass("show");
+    });
+
+
+    /*========================
+    Comment js
+    ==========================*/
+    $(".comment-click").on("click", function() {
+        $('.ldr-comments').show();
+        $('.comment-section .main-comment').hide();
+        setTimeout(function() {
+            $('.ldr-comments').hide();
+            $('.comment-section .main-comment').show();
+        }, 2000);
+        $(this).parents(".post-details").find(".comment-section .comments").toggleClass("d-block");
+    });
+
+    /*========================
+    Mouseup js
+    ==========================*/
+
+    $(document).mouseup(function(e) {
+
+        // create post
+        var post = $(".create-post");
+        if (!post.is(e.target) &&
+            post.has(e.target).length === 0) {
+            $(".create-post").removeClass("active");
+            $("#post-btn").removeClass();
+            $("#post-btn").addClass("post-btn d-none");
+            $("#post-btn1").removeClass();
+            $("#post-btn1").addClass("post-btn d-none");
+            $("overlay-bg").removeClass("active");
+        }
+
+        // react panel
+        var react = $(".react-btn");
+        if (!react.is(e.target) &&
+            react.has(e.target).length === 0) {
+            $(".react-box").removeClass("show");
+        }
+
+        // sidebar 
+        var sidebar = $(".fixed-sidebar");
+        if (!sidebar.is(e.target) &&
+            sidebar.has(e.target).length === 0) {
+            $(".fixed-sidebar").removeClass("show");
+            $("body").removeClass("sidebar-overlay");
+        }
+
+
+        // searchbar 
+        var searchbar = $(".search-box");
+        if (!searchbar.is(e.target) &&
+            searchbar.has(e.target).length === 0) {
+            $(".search-box").removeClass("show");
+        }
+
+    });
+
+
+    /*=====================
+    Show more/infinite js
+    ==========================*/
+    $(function() {
+        $(".infinite-loader-sec .col-grid-box").slice(0, 5).show();
+        var window_width = jQuery(window).width();
+        if ((window_width) > '1199') {
+            $("#load-more").on('click', function(e) {
+                e.preventDefault();
+                $(".infinite-loader-sec .col-grid-box:hidden").slice(0, 1).slideDown();
+                if ($(".infinite-loader-sec .col-grid-box:hidden").length === 0) {
+                    $("#load-more").addClass('no-more');
+                }
+            });
+        }
+    });
 
 
 })(window.jQuery);
