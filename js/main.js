@@ -599,7 +599,38 @@ $(".close, .popup-overlay").on("click", function(){
   $(".popup-overlay, .popup-content").removeClass("active");
 });
 
+// Based on Israel Eisenberg's variable stroke width articles
+// http://owl3d.com/svg/vsw/articles/
 
+// Path simplification based on Simplify.js
+// https://mourner.github.io/simplify-js/
+$(function(){
+var slider = document.getElementById("mortgageType");
+var output = document.getElementById("mortgageValue");
+output.innerHTML = slider.value;
 
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+});
+$(function(){
+var slider = document.getElementById("loanType");
+var output = document.getElementById("loanvalue");
+output.innerHTML = slider.value;
 
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+});
+
+$(function(){
+  var $ppc = $('.progress-pie-chart'),
+    percent = parseInt($ppc.data('percent')),
+    deg = 360*percent/100;
+  if (percent > 50) {
+    $ppc.addClass('gt-50');
+  }
+  $('.ppc-progress-fill').css('transform','rotate('+ deg +'deg)');
+  $('.ppc-percents span').html(percent+'%');
+});
 
