@@ -9191,6 +9191,20 @@ span#nav-close {
     color: rgb(0, 106, 255);
     display: block;
 }
+.subscribeform input.form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 15px;
+    color:#404040;
+}
+.subscribeform .btn-thm{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.subscribeform .btn-thm:hover{
+    background:#000;
+    border-color:#000;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
