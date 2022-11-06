@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<meta name="publisher" content="" />
+<meta name="copyright" content="" />
+<meta name="creation_Date" content="02/12/2021" />
+<meta name="expires" content="" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<title>Premier Agent | Mortgage Calculator</title>
+
+<!--StyleSheet-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!--Javascript-->
+<script src="js/google.api.js" type="text/Javascript"></script>
+</head>
+
+<body>
+<div class="sticky-header-wrap sticky-header py-1 py-sm-2 py-lg-1">
+  <div class="container position-relative">
+    <div class="row align-items-center">
+      <div class="col-5 col-md-3">
+        <div class="logo"><a href="index.html"><img src="images/property-logo.png" alt="Premier Agent"></a></div>
+      </div>
+      <div class="col-7 col-md-9 text-right position-static">
+        <nav class="main-menu menu-sticky1 d-none d-lg-block link-inherit mobile-menu-active">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Rent</a></li>
+            <li class="menu-item-has-children"><a href="service.html">Services</a>
+              <ul class="sub-menu">
+                <li><a href="service.html">Agent finder</a></li>
+                <li><a href="service-details.html">Services Details</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Manage Rentals</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="vs-menu-toggle text-theme border-theme d-inline-block d-lg-none"><i class="icofont-navigation-menu"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="vs-menu-wrapper">
+  <div class="vs-menu-area">
+    <button class="vs-menu-toggle text-theme"><i class="icofont-close"></i></button>
+    <div class="mobile-logo"><a href="index.html"><img src="images/property-logo.png" alt="Premier Agent"></a></div>
+    <div class="vs-mobile-menu link-inherit"></div>
+  </div>
+</div>
+<header class="header-wrapper header-layout3 py-3 py-lg-0 px-85">
+  <div class="container-fluid position-relative">
+    <div class="row align-items-center">
+      <div class="col-xl-1 d-none d-xl-block">
+      </div>
+      <div class="col-md-5 col-xl-4 position-static d-none d-lg-block">
+        <nav class="main-menu menu-style2 text-center">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="aboutus.html">About Us</a></li>
+            <li><a href="land.html">Land</a></li>
+            <li><a href="house.html">House</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-6 col-lg-2 col-xl-2">
+        <div class="header-logo text-left text-lg-center pr-2"><a href="index.html"><img src="images/property-logo.png" alt="Premier Agent"></a></div>
+      </div>
+      <div class="col-md-5 col-xl-4 position-static d-none d-lg-block">
+        <nav class="main-menu menu-style2 text-center">
+          <ul>
+            <li><a href="agent-finder.html">Agent Finder</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-xl-1 d-none d-xl-block">
+      </div>
+      <div class="col-6 d-block d-lg-none text-right">
+        <button type="button" class="vs-menu-toggle">
+          <span class="vs-menu-toggle-lines"></span>
+          </button>
+        <div class="mobile_signin">
+          <ul>
+            <li><a href="signin.html">Sign In</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- header area start -->
+<section class="headings inner-banner" style="background-image: url(images/blog/bg-details.jpg);">
+    <div class="blog-heading text-center">
+        <div class="container">
+            <h1>Mortgage Calculator</h1>
+        </div>
+    </div>
+</section>
+<!-- header area end -->
+
+
+<main class="inner-pages">
+<section class="calculator py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="introtext">
+                    <p>Use Zillow’s home loan calculator to quickly estimate your total mortgage payment including principal and interest, plus estimates for PMI, property taxes, home insurance and HOA fees. Enter the price of a home and down payment amount to calculate your estimated mortgage payment with an itemized breakdown and schedule. Adjust the loan details to fit your scenario more accurately.</p>
+                </div>
+                <div class="mortgageblock">
+                <div class="row">
+                    <div class="col-lg-5">
+                      <!--Form Area-->
+                        <form>
+                          <div class="form-group">
+                            <label for="">Home price*</label>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">$</span>
+                              </div>
+                              <input type="text" class="form-control" placeholder="Username" aria-label="Username" value="300,000">
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="">Down payment*</label>
+                            <div class="row no-gutter">
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">$</span>
+                                      </div>
+                                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" value="300,000">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" value="300,000">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">%</span>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="">Loan program*</label>
+                               <select id="form-1_term" aria-invalid="false" aria-labelledby="label_3" name="term" class="form-control">
+                                  <option selected="" value="Fixed30Year">30 year fixed</option>
+                                  <option value="Fixed15Year">15 year fixed</option>
+                                  <option value="ARM5">5-year ARM</option>
+                                </select>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="">Interest rate<a href="#" class="float-end">See our intrest rate</a></label>
+                            <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Username" aria-label="Username" value="300,000">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">%</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <button class="advancemore">Advanced <i class="icofont-thin-down"></i></button>
+                          </div>
+
+                          <div class="mortgagetoggle">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Include PMI</label>
+                              </div>
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Include taxes/insurance</label>
+                              </div>
+                              <div class="form-group">
+                            <label for="">Property tax*</label>
+                            <div class="row no-gutter">
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">$</span>
+                                      </div>
+                                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" value="300,000">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" value="300,000">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">%</span>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="">Home insuranceP*</label>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">$</span>
+                              </div>
+                              <input type="text" class="form-control" placeholder="Username" aria-label="Username" value="300,000">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">/year</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="">HOA dues*</label>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">$</span>
+                              </div>
+                              <input type="text" class="form-control" placeholder="Username" aria-label="Username" value="300,000">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">/year</span>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                        </form>
+                        <!-- End Form Area-->
+                        <!-- Modal Area-->
+                        <div class="float-end">
+                          <a class="link-modal" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel">Calculator Disclaimer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>The mortgage calculator is intended to be used for educational purposes only. Actual available rates and monthly payment amounts are subject to market fluctuations and will depend on a number of factors, including geography and loan characteristics. The estimates are based on information you provide, and may not include other fees and costs that a lender may assess in addition to monthly principal and interest, such as taxes and insurance and the actual payment obligation may be greater. Zillow Group Marketplace, Inc. does not make loans and this is not a commitment to lend.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Modal Area-->
+                    </div>
+                    <div class="col-lg-7">
+                      <nav class="mortgagemenu d-flex align-items-center justify-content-between">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="breakdown-tab" data-bs-toggle="tab" href="#breakdown" role="tab" aria-controls="breakdown" aria-selected="true">Breakdown</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="schedule-tab" data-bs-toggle="tab" href="#schedule" role="tab" aria-controls="schedule" aria-selected="false">Schedule</a>
+                        </li>
+                      </ul>
+                      <ul class="d-flex align-items-center shareArea">
+                        <li><a href="#" class="">Full Report</a></li>
+                        <li>
+                          <div class="dropdown no-arrow">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Share
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#"><i class="fab fa-facebook-f me-2"></i> Share on Facebook</a>
+                                <a class="dropdown-item" href="#"><i class="fab fa-twitter me-2"></i> Share on Twitter</a>
+                                <a class="dropdown-item" href="#"><i class="fab fa-instagram me-2"></i> Share on Instagram</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"></i> Share on Email</a>
+                            </div>
+                        </div>
+                        </li>
+                      </ul>
+                      </nav>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="breakdown" role="tabpanel" aria-labelledby="breakdown-tab">Profile</div>
+                        <div class="tab-pane fade" id="schedule" role="tabpanel" aria-labelledby="schedule-tab">Schedule</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="asidequote">
+                    <h2 class="">Get a more accurate estimate</h2>
+                    <p class="">Get pre-qualified by a lender to see an even more accurate estimate of your monthly mortgage payment.</p>
+                    <div class="quoteform">
+                        <form class="quoteform">
+                            <div class="quoteinput">
+                                <input type="text" class="form-control" placeholder="Email Address" aria-label="email">
+                            </div>
+                                <button type="submit" class="btn btn-primary btn-quote">Get pre-qualified</button>
+                            </form>
+                        </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="calcMorgate">
+          <div class="card-body">
+          <h2>How to calculate mortgage payments</h2>
+          <p>Zillow's mortgage calculator gives you the opportunity to customize your mortgage details while making assumptions for fields you may not know quite yet. These autofill elements make the home loan calculator easy to use and can be updated at any point.<br>Remember, your monthly house payment includes more than just repaying the amount you borrowed to purchase the home. The "principal" is the amount you borrowed and have to pay back (the loan itself), and the interest is the amount the lender charges for lending you the money.<br>For most borrowers, the total monthly payment sent to your mortgage lender includes other costs, such as homeowner's insurance and taxes. If you have an escrow account, you pay a set amount toward these additional expenses as part of your monthly mortgage payment, which also includes your principal and interest. Your mortgage lender typically holds the money in the escrow account until those insurance and tax bills are due, and then pays them on your behalf. If your loan requires other types of insurance like private mortgage insurance (PMI) or homeowner's association dues (HOA), these premiums may also be included in your total mortgage payment.</p>
+          <h3>Home price</h3>
+          <p>The price is either the amount you paid for a home or the amount you may pay for a future home purchase.</p>
+          <h3>Down payment</h3>
+          <p>Most home loans require at least 3% of the price of the home as a down payment. Some loans, like VA loans and some USDA loans allow zero down. Although it's a myth that a 20% down payment is required to obtain a loan, keep in mind that the higher your down payment, the lower your monthly payment. A 20% down payment also allows you to avoid paying private mortgage insurance on your loan.</p>
+          <h3>Loan program</h3>
+          <p>Your loan program can affect your interest rate and total monthly payments. Choose from 30-year fixed, 15-year fixed, and 5-year ARM loan scenarios in the calculator to see examples of how different loan terms mean different monthly payments. Learn more about loan types below.</p>
+          <h3>Interest rate</h3>
+          <p>Mortgage interest is the cost you pay your lender each year to borrow their money, expressed as a percentage rate. The calculator auto-populates the current average interest rate.</p>
+          <h3>PMI</h3>
+          <p>Private Mortgage Insurance (PMI) is calculated based on your credit score and amount of down payment. If your loan amount is greater than 80% of the home purchase price, lenders require insurance on their investment. This is a monthly cost that increases your mortgage payment.</p>
+          <h3>Property taxes</h3>
+          <p>Your estimated annual property tax is based on the home purchase price. The total is divided by 12 months and applied to each monthly mortgage payment. If you know the specific amount of taxes, add as an annual total.</p>
+          <h3>Home insurance</h3>
+          <p>Homeowner's insurance is based on the home price, and is expressed as an annual premium. The calculator divides that total by 12 months to adjust your monthly mortgage payment. Average annual premiums usually cost less than 1% of the home price and protect your liability as the property owner and insure against hazards, loss, etc.</p>
+          <h3>HOA dues</h3>
+          <p>Homeowners in some developments and townhome or condominium communities pay monthly Homeowner's Association (HOA) fees to collectively pay for amenities, maintenance and some insurance. Update to include your monthly HOA costs, if applicable. If there are no HOA costs, you can leave the field blank.</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <div class="calcMorgate">
+          <div class="card-body">
+            <h2>Mortgage payment equation</h2>
+            <span>Principal + Interest + Mortgage Insurance (if applicable) + Escrow (if applicable) = Total monthly payment</span>
+            <p>The traditional monthly mortgage payment calculation includes:</p>
+            <ul>
+              <li><strong>Principal:</strong> The amount of money you borrowed.</li>
+              <li><strong>Interest:</strong> The cost of the loan.</li>
+              <li><strong>Mortgage insurance:</strong> The mandatory insurance to protect your lender's investment of 80% or more of the home's value.</li>
+              <li><strong>Escrow:</strong> The monthly cost of property taxes, HOA dues and homeowner's insurance.</li>
+              <li><strong>Payments:</strong> Multiply the years of your loan by 12 months to calculate the total number of payments. A 30-year term is 360 payments (30 years x 12 months = 360 payments).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <div class="calcMorgate">
+          <div class="card-body">
+            <h2>Frequently asked questions about mortgages</h2>
+            <div class="accordion" id="accordionFaq">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">What is the principal of a loan?</button>
+                </h2>
+                <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p>The principal of a loan is the remaining balance of the money you borrowed. Principal does not include interest, which is the cost of the loan.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">What is a down payment?</button>
+                </h2>
+                <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                   <p>The down payment is the money you pay upfront to purchase a home. The down payment plus the loan amount should add up to the cost of the home.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">APR vs interest rate?</button>
+                </h2>
+                <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p>Interest rate is the base fee for borrowing money, while the annual percentage rate (APR) is the interest rate plus the lender fees. APR gives you an accurate idea of the cost of a financing offer, highlighting the relationship between rate and fees.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqfour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">How much are closing costs?</button>
+                </h2>
+                <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="faqfour" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p>Closing costs for a home buyer are typically 2% to 5% of the purchase price of the home. Depending on loan type, these costs may roll into the mortgage payment or be paid at closing. Agent commission is traditionally paid by the seller.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqfive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">How much is private mortgage insurance?</button>
+                </h2>
+                <div id="faqFive" class="accordion-collapse collapse" aria-labelledby="faqfive" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p>The cost of private mortgage insurance varies based on factors such as credit score, down payment and loan type.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSix" aria-expanded="false" aria-controls="faqSix">How much is homeowner's insurance?</button>
+                </h2>
+                <div id="faqSix" class="accordion-collapse collapse" aria-labelledby="faqSix" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p>You should consult with your insurance carrier, but the general thought is that homeowner's insurance costs roughly $35 per month for every $100,000 of the home value.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer-light">
+  <div class="premier__copyright-area">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-12">
+                    <div class="premier__social-media text-left">
+                        <ul>
+                            <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12 align-self-center">
+                    <div class="premier__copyright-menu text-center">
+                        <ul>
+                            <li><a href="#">Advertise with Us</a></li>
+                            <li><a href="#">Agent Admin</a></li>
+                            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                            <li><a href="privacy.html">Privacy &amp; Policy</a></li>
+                            <li><a href="contacts.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="premier__copyright-design">
+                        <p>All Rights Reserved @ Company <span class="current-year">2022</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js" type="text/Javascript"></script>
+<script src="js/main.js" type="text/Javascript"></script>
+</body>
+
+</html>
