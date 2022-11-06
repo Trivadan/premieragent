@@ -2696,7 +2696,6 @@ form.footer_mailchimp_form textarea.form-control {
   }
 }
 .inner-pages .form-control {
-  padding: .7rem;
   border: 1px solid #0668f6;
 }
 @media screen and (max-width: 767px) {
@@ -4754,7 +4753,6 @@ a.category-style-01 {
     line-height: 1.2;
     margin-top: 12px;
 }
-
 .shop_single_tab_content{
   background-color: #ffffff;
   border-bottom: 1px solid #ebebeb;
@@ -8852,6 +8850,348 @@ ul.listing-details li {
     text-decoration: underline;
 }
 
+.mortgageblock{
+    margin-top: 30px;
+}
+.inner-pages .mortgageblock label{
+    display: block;
+    width: 100%;
+    margin-bottom:5px;
+    font-weight:500;
+    font-size: 15px;
+}
+.inner-pages .mortgageblock label a{
+    color:#0668f6;
+    font-weight: 600;
+}
+.inner-pages .mortgageblock label a:hover{
+    text-decoration: underline;
+}
+.mortgageblock .input-group{
+    border: 1px solid rgb(209, 209, 213);
+    border-radius:4px;
+}
+.inner-pages .mortgageblock .form-control{
+    background-color: rgb(246, 246, 250);
+    border:none;
+    border-radius:4px;
+    padding: 9px 16px;
+}
+.mortgageblock .input-group-text {
+    background-color: rgb(246, 246, 250);
+    padding: 9px 16px;
+    border-radius:4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: none;
+}
+.mortgageblock .nice-select.form-control {
+    width: 100%;
+    padding: 0 10px!important;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.mortgageblock .nice-select.form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+.mortgageblock ul.list {
+    width: 100%;
+}
+
+.calcMorgate .card-body{
+    padding: 32px;
+    margin:20px 0;
+    border-radius:4px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(209, 209, 213);
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 3px 0px;
+}
+.calcMorgate .card-body h2{
+    color: rgb(42, 42, 51);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0px 0px 32px;
+}
+.calcMorgate .card-body h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgb(42, 42, 51);
+    margin:15px 0;
+}
+.calcMorgate .card-body p{
+    color: rgb(42, 42, 51);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px;
+}
+.calcMorgate h2.accordion-header {
+    line-height: normal !important;
+    margin: 0 !important;
+}
+.calcMorgate h2.accordion-header {
+    line-height: normal !important;
+    margin: 0 !important;
+}
+.calcMorgate button.accordion-button {
+    font-size: 21px;
+    font-weight: 600;
+}
+.calcMorgate .accordion-button:not(.collapsed) {
+    text-decoration: underline;
+    background-color: rgb(246, 246, 250);
+    color: #000;
+    border: none;
+}
+.calcMorgate .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.asidequote{
+    padding: 32px;
+    background-color: rgb(0, 106, 255);
+    text-align: center;
+}
+.asidequote h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    color: #FFF;
+}
+.asidequote p{
+    color: #FFF;
+    margin-bottom: 15px;
+}
+.quoteform button{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 106, 255);
+    color: rgb(0, 106, 255);
+    margin-top: 15px;
+}
+.mortgagetoggle{
+    display: none;
+}
+.advancemore{
+    background: none;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    padding:5px 10px;
+    border-radius:5px;
+}
+.advancemore:focus{
+    border: 1px solid rgba(0, 106, 255, 0.3);
+}
+.link-modal{
+    border-bottom: 1px dotted rgb(0, 106, 255);
+    padding-bottom: 5px;
+    color: #000;
+}
+.link-modal:focus{
+    color:rgb(0, 106, 255);
+}
+
+nav.mortgagemenu {
+    border-bottom: 1px solid #EEE;
+}
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+    color:#000;
+}
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 1px solid rgb(0, 106, 255);
+    color:rgb(0, 106, 255);
+}
+.shareArea{
+    margin-bottom: 10px;
+}
+.shareArea li{
+    margin-left: 10px;
+}
+.shareArea li a{
+    border: 1px solid rgb(0, 106, 255);
+    padding:6px 15px;
+    color: rgb(0, 106, 255);
+    border-radius:4px;
+}
+.shareArea li a:hover{
+    background:rgb(0, 106, 255);
+    color:#FFF;
+}
+.shareArea li a.dropdown-item {
+    border: none;
+    border-radius: 0;
+}
+.shareArea li a.dropdown-item:hover{
+    border: none;
+    border-radius: 0;
+}
+
+.floating-action-bar {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    transition: bottom .5s;
+    line-height: 50px;
+    z-index: 9;
+    box-shadow: 0 0 7px 1px rgb(0 0 0 / 25%);
+    font-size: 16px;
+    bottom:10px;
+    display: none;
+    flex-grow: 1;
+    flex-direction: row;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.floating-action-bar .action-bar-left-content, 
+.floating-action-bar .action-bar-right-content {
+    display: flex;
+    height:40px;
+    width: 105px;
+    margin: 0;
+    box-shadow: 0 0 1px 0 #000;
+    border-radius: 3px;
+}
+.floating-action-bar .action-bar-left-content a, 
+.floating-action-bar .action-bar-left-content button, 
+.floating-action-bar .action-bar-right-content a, 
+.floating-action-bar .action-bar-right-content button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    height: 100%;
+    line-height: 0;
+    width: 100%;
+    margin: 0;
+    color: #0D4599;
+    background-color: #E0F2FF;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+}
+.floating-action-bar i {
+    margin-right: 8px;
+}
+nav.right_menu_togle {
+  background:#FFF;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -100%;
+  font-size: 15px;
+  top: 0;
+  width:100%;
+  z-index:99999;
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+}
+.nav-expanded nav {
+  right: 0 !important;
+}
+body.nav-expanded {
+  margin-left: 0em;
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+.right_menu_togle .close-btn {
+    overflow: hidden;
+    padding: 20px 10px 10px;
+    border-bottom: 1px solid rgb(209, 209, 213);
+}
+.closeinfo{
+    font-size: 16px;
+    font-weight: 500;
+    color:#000;
+}
+span#nav-close {
+  font-size: 20px;
+    cursor: pointer;
+    color: #000;
+    display: block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    line-height: 26px;
+    float: right;
+    font-weight: bold;
+}
+.sidebar_nav.navbar {
+    position: absolute;
+    min-height: auto;
+    margin-bottom: 0;
+    border: 0;
+}
+.rs-menu.rs-menu-close,
+.sidebar_nav.navbar-inverse{
+  background: transparent;
+}
+.filtermenu li{
+    display:block;
+}
+.filtermenu li a {
+    border-bottom: 1px solid rgb(209, 209, 213);
+    font-size: 15px;
+    height: 50px;
+    line-height: 30px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    font-weight: 500;
+    color: #000;
+}
+.filtermenu li a:hover{
+    background:#E0F2FF;
+}
+.filtermenu li:last-child a{
+    background:rgb(255, 248, 225);
+}
+
+.signupinfo h1{
+    color:#000;
+    font-weight: 500;
+    font-size: 30px;
+}
+.signupinfo ul{
+    margin: 15px 0;
+}
+.signupinfo ul li{
+    font-size: 16px;
+}
+.signupinfo ul li + li{
+    margin-top:10px;
+}
+.signupinfo ul li span{
+    color: rgb(0, 106, 255);
+    margin-right: 5px;
+    width: 20px;
+    display: inline-block;
+    font-size: 18px;
+}
+.signupinfo p{
+    color:#404040;
+}
+.signupinfo p a{
+    color: rgb(0, 106, 255);
+    display: block;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -8989,6 +9329,9 @@ blockquote {
     width: 100%;
     min-height: 100vh;
 }
+.signupinfo{
+    display: none;
+}
 }
 @media screen and (max-width:900px){
 }
@@ -9016,6 +9359,9 @@ blockquote {
     width:50%;
     flex: 1 0 50%;
 }
+.floating-action-bar {
+    display: flex;
+}
 }
 @media screen and (max-width:715px){
 .sort-by label {
@@ -9026,6 +9372,9 @@ blockquote {
     margin-left: 5px;
     margin-top: 5px;
     padding-left: 10px;
+}
+.right_menu_togle{
+    display: block;
 }
 }
 @media screen and (max-width:630px){
