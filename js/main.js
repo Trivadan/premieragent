@@ -259,34 +259,34 @@
     /*----------------------------------------------------*/
     /*  Accordions
     /*----------------------------------------------------*/
-    var $accor = $('.accordion');
+    // var $accor = $('.accordion');
 
-     $accor.each(function() {
-         $(this).toggleClass('ui-accordion ui-widget ui-helper-reset');
-         $(this).find('h3').addClass('ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all');
-         $(this).find('div').addClass('ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom');
-         $(this).find("div").hide();
-    });
+    //  $accor.each(function() {
+    //      $(this).toggleClass('ui-accordion ui-widget ui-helper-reset');
+    //      $(this).find('h3').addClass('ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all');
+    //      $(this).find('div').addClass('ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom');
+    //      $(this).find("div").hide();
+    // });
 
-    var $trigger = $accor.find('h3');
+    // var $trigger = $accor.find('h3');
 
-    $trigger.on('click', function(e) {
-         var location = $(this).parent();
+    // $trigger.on('click', function(e) {
+    //      var location = $(this).parent();
 
-         if( $(this).next().is(':hidden') ) {
-              var $triggerloc = $('h3',location);
-              $triggerloc.removeClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideUp(300);
-              $triggerloc.find('span').removeClass('ui-accordion-icon-active');
-              $(this).find('span').addClass('ui-accordion-icon-active');
-              $(this).addClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideDown(300);
-         }
-         else if( $(this).is(':visible') ) {
-              var $triggerloc = $('h3',location);
-              $triggerloc.removeClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideUp(300);
-              $triggerloc.find('span').removeClass('ui-accordion-icon-active');
-         }
-          e.preventDefault();
-    });
+    //      if( $(this).next().is(':hidden') ) {
+    //           var $triggerloc = $('h3',location);
+    //           $triggerloc.removeClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideUp(300);
+    //           $triggerloc.find('span').removeClass('ui-accordion-icon-active');
+    //           $(this).find('span').addClass('ui-accordion-icon-active');
+    //           $(this).addClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideDown(300);
+    //      }
+    //      else if( $(this).is(':visible') ) {
+    //           var $triggerloc = $('h3',location);
+    //           $triggerloc.removeClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideUp(300);
+    //           $triggerloc.find('span').removeClass('ui-accordion-icon-active');
+    //      }
+    //       e.preventDefault();
+    // });
 
     /*-------------------------------------
       Swiper Js
@@ -584,6 +584,28 @@
     $("#seconds").html(seconds + "<span>Seconds</span>");
     }
     setInterval(function() { makeTimer(); }, 300);
+
+     $('.advancemore').click(function(e){
+        e.preventDefault();
+        $('.mortgagetoggle').slideToggle();
+        $(this).text( $(this).text() == 'Advanced' ? "Simple" : "Advanced"); // using ternary operator.
+    });
+
+     //canvas menu
+    var navexpander = $('#nav-expander');
+    if(navexpander.length){
+        $('#nav-expander').on('click',function(e){
+            e.preventDefault();
+            $('body').toggleClass('nav-expanded');
+        });
+    }
+    var navclose = $('#nav-close');
+    if(navclose.length){
+        $('#nav-close').on('click',function(e){
+            e.preventDefault();
+            $('body').removeClass('nav-expanded');
+        });
+    }
 
 
 })(window.jQuery);
