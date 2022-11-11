@@ -9206,6 +9206,106 @@ span#nav-close {
     border-color:#000;
 }
 
+/*== Next Prev Pagination Blog Sinlge Page ==*/
+
+.mbp_pagination_tab {
+    padding: 35px 0 60px;
+    position: relative;
+    background: #f5f7fc;
+}
+.mbp_pagination_tab .pag_prev{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.mbp_pagination_tab .pag_prev a,
+.mbp_pagination_tab .pag_next a{
+    background-color: rgb(208, 208, 208);
+    border-radius: 50%;
+    height: 65px;
+    line-height: 65px;
+    padding-left: 0;
+    text-align: center;
+    width: 65px;
+}
+.mbp_pagination_tab .pag_prev:hover,
+.mbp_pagination_tab .pag_next:hover{
+  cursor: pointer;
+}
+.mbp_pagination_tab .pag_next a{
+  display: inline-block;
+  float: right;
+}
+.mbp_pagination_tab .pag_prev a:hover,
+.mbp_pagination_tab .pag_next a:hover{
+  background-color: #0668f6;
+}
+.mbp_pagination_tab .pag_prev a span,
+.mbp_pagination_tab .pag_next a span{
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.2;
+  -moz-transform: matrix( 0,-1,1,0,0,0);
+  -webkit-transform: matrix( 0,-1,1,0,0,0);
+  -ms-transform: matrix( 0,-1,1,0,0,0);
+}
+.mbp_pagination_tab .pag_prev .detls{
+  padding-left: 15px;
+}
+.mbp_pagination_tab .pag_next a{
+  padding-right: 0;
+}
+.mbp_pagination_tab .pag_next .detls{
+  padding-right: 15px;
+}
+.mbp_pagination_tab .pag_prev .detls,
+.mbp_pagination_tab .pag_next .detls{
+  display: inline-block;
+  font-size: 16px;
+  color: #484848;
+  line-height: 1.75;
+  margin-bottom: 0;
+}
+.mbp_pagination_tab .pag_prev .detls h5,
+.mbp_pagination_tab .pag_next .detls h5{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.mbp_pagination_tab .pag_prev .detls p,
+.mbp_pagination_tab .pag_next .detls p{
+  font-size: 16px;
+  color: #484848;
+  line-height: 1.714;
+  margin-bottom: 0;
+}
+.mbp_pagination_tab .pag_prev .detls h5:hover,
+.mbp_pagination_tab .pag_next .detls h5:hover,
+.mbp_pagination_tab .pag_prev .detls p:hover,
+.mbp_pagination_tab .pag_next .detls p:hover,
+.mbp_pagination_tab .pag_prev a:hover,
+.mbp_pagination_tab .pag_next a:hover{
+  color: #0668f6;
+}
+
+#mbpagination.active {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 10;
+}
+#mbpagination .closesidebar {
+  position: absolute;
+  width: 20px;
+  right: 15px;
+  top: 15px;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */

@@ -338,6 +338,7 @@
                     </div>
                 </div>
             </aside>
+
             <aside class="col-lg-3 col-md-12">
                 <div class="widget newletterblog">
                     <h5 class="font-weight-bold mb-4">Newsletter</h5>
@@ -413,6 +414,29 @@
     </div>
 </section>
 <!-- END SECTION BLOG -->
+<section class="mbp_pagination_tab" id="mbpagination">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-lg-6">
+        <div class="pag_prev"> <a href="#"><span class="icofont-rounded-left"></span></a>
+          <div class="detls">
+            <h5>Previous Post</h5>
+            <p> Housing Markets That</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-6">
+        <div class="pag_next text-left float-end"> <a href="#"><span class="icofont-rounded-right"></span></a>
+          <div class="detls">
+            <h5>Next Post</h5>
+            <p> Most This Decade</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="blog blog-section related-section">
   <div class="container">
     <div class="row">
@@ -569,6 +593,19 @@
 <!-- jQuery -->
 <script src="js/jquery.min.js" type="text/Javascript"></script>
 <script src="js/main.js" type="text/Javascript"></script>
+<script type="text/javascript">
+$(window).scroll(function() {    
+  var scroll = $(window).scrollTop();
+  if (scroll >= 600) {
+    $("#mbpagination").addClass("active");
+  } else {
+    $("#mbpagination").removeClass("active");
+  }
+  $('.closesidebar').click(function() { 
+    $("#mbpagination").hide();
+  });
+});
+</script>
 </body>
 
 </html>
