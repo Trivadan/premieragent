@@ -256,6 +256,15 @@
         itemsMobile : [767,1]
     });
 
+    //LightBox / Fancybox
+    $('.lightbox-image').fancybox({
+        openEffect  : 'fade',
+        closeEffect : 'fade',
+        helpers : {
+            media : {}
+        }
+    });
+
     /*----------------------------------------------------*/
     /*  Accordions
     /*----------------------------------------------------*/
@@ -535,7 +544,6 @@
             $("body").removeClass("sidebar-overlay");
         }
 
-
         // searchbar 
         var searchbar = $(".search-box");
         if (!searchbar.is(e.target) &&
@@ -544,7 +552,6 @@
         }
 
     });
-
 
     /*=====================
     Show more/infinite js
@@ -606,7 +613,6 @@
             $('body').removeClass('nav-expanded');
         });
     }
-
 
 })(window.jQuery);
 
