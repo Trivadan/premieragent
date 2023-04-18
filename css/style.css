@@ -5454,7 +5454,7 @@ ul.total_reivew_view .star_list li:last-child a{
 .review_star li ul li a{
   font-size: 14px;
   font-family: "Font Awesome 5 Free";
-  color: #bcc52a;
+  color: #f6b01e;
   line-height: 2.143;
 }
 .mbp_comment_form.style2 .sspd_review li ul li:last-child a,
@@ -9994,7 +9994,8 @@ Video area Css
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.05);;
 }
 .prodrating {
-    padding: 15px;
+    padding:40px 15px 15px;
+    border-bottom: none;
 }
 .product-row-review{
     padding:10px 0;
@@ -10003,8 +10004,9 @@ Video area Css
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .prodrating h3{
-    font-size:16px;
+    font-size:15px;
     margin-bottom: 15px;
+    font-weight:600;
 }
 .product-ratestars.star_list li{
     font-size: 14px;
