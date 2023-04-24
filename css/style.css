@@ -9993,12 +9993,15 @@ Video area Css
 .box-shadow-card{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.05);;
 }
+
+/***Product Review Css***/
 .prodrating {
     padding:40px 15px 15px;
     border-bottom: none;
 }
 .product-row-review{
     padding:10px 0;
+    display: none;
 }
 .product-row-review + .product-row-review{
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -10087,14 +10090,21 @@ Video area Css
     color:#000;
     font-size:21px;
 }
-.prodrating-header a {
+.viewall a{
     color: #0668f6;
     font-size: 16px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    text-decoration: underline;
     font-weight: 600;
 }
-.prodrating-header a:hover{
+.viewall a:hover{
     color: #000;
+    text-decoration: none;
+}
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
 }
 
 /* ---------------------------------------------------

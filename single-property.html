@@ -579,6 +579,69 @@
                                 <p>Great picture quality, nice sounds quality for the price!</p>
                                 <div class="reviewdate"><span>14-04-2023 by Paul</span></div>
                               </article>
+                              <article class="product-row-review">
+                                <ul class="star_list product-ratestars">
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Great picture quality</h4>
+                                <p>Great picture quality, nice sounds quality for the price!</p>
+                                <div class="reviewdate"><span>14-04-2023 by Paul</span></div>
+                              </article>
+                              <article class="product-row-review">
+                                <ul class="star_list product-ratestars">
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Great picture quality</h4>
+                                <p>Great picture quality, nice sounds quality for the price!</p>
+                                <div class="reviewdate"><span>14-04-2023 by Paul</span></div>
+                              </article>
+                              <article class="product-row-review">
+                                <ul class="star_list product-ratestars">
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Great picture quality</h4>
+                                <p>Great picture quality, nice sounds quality for the price!</p>
+                                <div class="reviewdate"><span>14-04-2023 by Paul</span></div>
+                              </article>
+                              <article class="product-row-review">
+                                <ul class="star_list product-ratestars">
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Great picture quality</h4>
+                                <p>Great picture quality, nice sounds quality for the price!</p>
+                                <div class="reviewdate"><span>14-04-2023 by Paul</span></div>
+                              </article>
+                              <article class="product-row-review">
+                                <ul class="star_list product-ratestars">
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item active"><i class="fa fa-star"></i></li>
+                                  <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Great picture quality</h4>
+                                <p>Great picture quality, nice sounds quality for the price!</p>
+                                <div class="reviewdate"><span>14-04-2023 by Paul</span></div>
+                              </article>
+                              <div class="viewallarea">
+                                <div id="viewall" class="viewall"><a href="#">View More Reviews </a> </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -837,6 +900,17 @@
 <!-- jQuery -->
 <script src="js/jquery.min.js" type="text/Javascript"></script>
 <script src="js/main.js" type="text/Javascript"></script>
+<script type="text/javascript">$(document).ready(function(){
+$(".product-row-review").slice(0, 3).show();
+$("#viewall").on("click", function(e){
+  e.preventDefault();
+  $(".product-row-review:hidden").slice(0, 4).slideDown();
+  if($(".product-row-review:hidden").length == 0) {
+    $("#viewall").text("No Content").addClass("noContent");
+  }
+});
+})
+</script>
 </body>
 
 </html>
