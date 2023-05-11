@@ -708,7 +708,7 @@
                       <div class="col-lg-12">
                         <div class="mbp_comment_form style2">
                           <h4>Write a Review</h4>
-                          <ul class="sspd_review">
+                          <!-- <ul class="sspd_review">
                             <li class="list-inline-item">
                               <ul class="mb0">
                                 <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
@@ -719,8 +719,24 @@
                               </ul>
                             </li>
                             <li class="list-inline-item review_rating_para">Your Rating & Review</li>
-                          </ul>
+                          </ul> -->
                           <form class="comments_form">
+                          <div id="full-stars" class="ratingreview">
+                            <div class="rating-group">
+                                <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+                                <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+                                <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+                                <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
+                                <label aria-label="4 stars" class="rating__label" for="rating3-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+                                <label aria-label="5 stars" class="rating__label" for="rating3-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+                            </div>
+                        </div>
+
                             <div class="form-group">
                               <input type="text" class="form-control" id="exampleInputName1" aria-describedby="textHelp" placeholder="Review Title">
                             </div>
