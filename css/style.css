@@ -9473,18 +9473,11 @@ span#nav-close {
 }
 .mbp_pagination_tab .pag_prev .detls, .mbp_pagination_tab .pag_next .detls {
     width: auto;
+    text-align: left;
 }
-/*.mbp_pagination_tab .pag_prev .detls, .mbp_pagination_tab .pag_next .detls {
-    width: 20vw;
-}*/
-/*.mbp_pagination_tab .pag_prev a, .mbp_pagination_tab .pag_next a {
-    height: 45px;
-    line-height: 45px;
-    width: 46px;
+.pag_next.text-left.float-end {
+    width: 100%;
 }
-.mbp_pagination_tab .pag_prev a span, .mbp_pagination_tab .pag_next a span {
-    font-size: 23px;
-}*/
 }
 
 /*== End of Next Prev Pagination Blog Sinlge Page ==*/

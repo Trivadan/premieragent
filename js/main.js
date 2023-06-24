@@ -265,38 +265,6 @@
         }
     });
 
-    /*----------------------------------------------------*/
-    /*  Accordions
-    /*----------------------------------------------------*/
-    // var $accor = $('.accordion');
-
-    //  $accor.each(function() {
-    //      $(this).toggleClass('ui-accordion ui-widget ui-helper-reset');
-    //      $(this).find('h3').addClass('ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all');
-    //      $(this).find('div').addClass('ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom');
-    //      $(this).find("div").hide();
-    // });
-
-    // var $trigger = $accor.find('h3');
-
-    // $trigger.on('click', function(e) {
-    //      var location = $(this).parent();
-
-    //      if( $(this).next().is(':hidden') ) {
-    //           var $triggerloc = $('h3',location);
-    //           $triggerloc.removeClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideUp(300);
-    //           $triggerloc.find('span').removeClass('ui-accordion-icon-active');
-    //           $(this).find('span').addClass('ui-accordion-icon-active');
-    //           $(this).addClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideDown(300);
-    //      }
-    //      else if( $(this).is(':visible') ) {
-    //           var $triggerloc = $('h3',location);
-    //           $triggerloc.removeClass('ui-accordion-header-active ui-state-active ui-corner-top').next().slideUp(300);
-    //           $triggerloc.find('span').removeClass('ui-accordion-icon-active');
-    //      }
-    //       e.preventDefault();
-    // });
-
     /*-------------------------------------
       Swiper Js
     -------------------------------------*/
@@ -568,34 +536,6 @@
                 }
             });
         }
-    });
-
-    /*--- Count Time JS ---*/ 
-
-    function makeTimer() {
-    var endTime = new Date("december  30, 2022 17:00:00 PDT");          
-    var endTime = (Date.parse(endTime)) / 1000;
-    var now = new Date();
-    var now = (Date.parse(now) / 1000);
-    var timeLeft = endTime - now;
-    var days = Math.floor(timeLeft / 86400); 
-    var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-    var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
-    var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-    if (hours < "10") { hours = "0" + hours; }
-    if (minutes < "10") { minutes = "0" + minutes; }
-    if (seconds < "10") { seconds = "0" + seconds; }
-    $("#days").html(days + "<span>Days</span>");
-    $("#hours").html(hours + "<span>Hours</span>");
-    $("#minutes").html(minutes + "<span>Minutes</span>");
-    $("#seconds").html(seconds + "<span>Seconds</span>");
-    }
-    setInterval(function() { makeTimer(); }, 300);
-
-     $('.advancemore').click(function(e){
-        e.preventDefault();
-        $('.mortgagetoggle').slideToggle();
-        $(this).text( $(this).text() == 'Advanced' ? "Simple" : "Advanced"); // using ternary operator.
     });
 
      //canvas menu
