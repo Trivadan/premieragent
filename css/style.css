@@ -4809,6 +4809,7 @@ a.category-style-01 {
 .feat_property.list .details .tc_content {
     padding: 25px 20px 10px;
     position: relative;
+    align-items: center;
 }
 .feat_property .details .tc_content h4 {
     font-size: 18px;
@@ -9322,7 +9323,7 @@ span#nav-close {
 .mbp_pagination_tab {
     padding: 35px 0 60px;
     position: relative;
-    background: #f5f7fc;
+    background:rgba(6, 104, 246, 0.95);
 }
 .mbp_pagination_tab .pag_prev{
   display: -webkit-flex;
@@ -9331,67 +9332,94 @@ span#nav-close {
   display: -o-flex;
   display: flex;
 }
-.mbp_pagination_tab .pag_prev a,
-.mbp_pagination_tab .pag_next a{
-    background-color: rgb(208, 208, 208);
-    border-radius: 50%;
-    height: 65px;
-    line-height: 65px;
+.mbp_pagination_tab .pag_prev a, .mbp_pagination_tab .pag_next a {
+    background-color: rgb(255, 255, 255);
+    height: 55px;
+    line-height: 62px;
     padding-left: 0;
     text-align: center;
-    width: 65px;
+    width: 56px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    border:1px solid transparent;
 }
 .mbp_pagination_tab .pag_prev:hover,
 .mbp_pagination_tab .pag_next:hover{
   cursor: pointer;
 }
-.mbp_pagination_tab .pag_next a{
-  display: inline-block;
-  float: right;
+.mbp_pagination_tab .pag_next a {
+    float: right;
+    margin-left: 48px;
 }
 .mbp_pagination_tab .pag_prev a:hover,
 .mbp_pagination_tab .pag_next a:hover{
   background-color: #0668f6;
+  color:#FFF;
 }
 .mbp_pagination_tab .pag_prev a span,
 .mbp_pagination_tab .pag_next a span{
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 1.2;
-  -moz-transform: matrix( 0,-1,1,0,0,0);
-  -webkit-transform: matrix( 0,-1,1,0,0,0);
-  -ms-transform: matrix( 0,-1,1,0,0,0);
+  color: #0668f6;
+  font-size:26px;
+  line-height:2;
+}
+.mbp_pagination_tab .pag_prev a:hover, 
+.mbp_pagination_tab .pag_next a:hover{
+    background-color: transparent;
+    border-color:#FFF;
+    text-decoration: none !important;
+}
+.mbp_pagination_tab .pag_prev a:hover span,
+.mbp_pagination_tab .pag_next a:hover span{
+    text-decoration: none;
+    color:#FFF;
+}
+.mbp_pagination_tab .pag_prev a {
+    margin-right: 48px;
 }
 .mbp_pagination_tab .pag_prev .detls{
   padding-left: 15px;
 }
-.mbp_pagination_tab .pag_next a{
-  padding-right: 0;
-}
 .mbp_pagination_tab .pag_next .detls{
   padding-right: 15px;
+  text-align: right;
 }
-.mbp_pagination_tab .pag_prev .detls,
+.mbp_pagination_tab .pag_prev .detls, 
+.mbp_pagination_tab .pag_next .detls {
+/*    display: inline-block;*/
+    font-size: 16px;
+    color: #484848;
+    line-height: 1.75;
+    margin-bottom: 0;
+    width: 33.33333vw;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 410px;
+}
+@media (min-width: 700px){
+.mbp_pagination_tab .pag_prev .detls, 
 .mbp_pagination_tab .pag_next .detls{
-  display: inline-block;
-  font-size: 16px;
-  color: #484848;
-  line-height: 1.75;
-  margin-bottom: 0;
+    width: 33.33333vw;
 }
-.mbp_pagination_tab .pag_prev .detls h5,
-.mbp_pagination_tab .pag_next .detls h5{
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.5;
-  margin-bottom: 0;
 }
-.mbp_pagination_tab .pag_prev .detls p,
-.mbp_pagination_tab .pag_next .detls p{
-  font-size: 16px;
-  color: #484848;
-  line-height: 1.714;
-  margin-bottom: 0;
+.mbp_pagination_tab .pag_prev .detls h5, 
+.mbp_pagination_tab .pag_next .detls h5 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 0;
+    color: #FFF;
+}
+.mbp_pagination_tab .pag_prev .detls p, 
+.mbp_pagination_tab .pag_next .detls p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.514;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 .mbp_pagination_tab .pag_prev .detls h5:hover,
 .mbp_pagination_tab .pag_next .detls h5:hover,
@@ -9399,7 +9427,8 @@ span#nav-close {
 .mbp_pagination_tab .pag_next .detls p:hover,
 .mbp_pagination_tab .pag_prev a:hover,
 .mbp_pagination_tab .pag_next a:hover{
-  color: #0668f6;
+  color: #FFF;
+  text-decoration: underline;
 }
 
 #mbpagination.active {
@@ -9407,7 +9436,7 @@ span#nav-close {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 30px 0;
+    padding:15px 0;
     z-index: 10;
 }
 #mbpagination .closesidebar {
@@ -9416,6 +9445,42 @@ span#nav-close {
   right: 15px;
   top: 15px;
 }
+
+@media screen and (max-width:991px){
+.mbp_pagination_tab .pag_prev a {
+    margin-right: 15px;
+}
+.mbp_pagination_tab .pag_next a {
+    margin-left: 15px;
+}
+.mbp_pagination_tab .pag_prev .detls, .mbp_pagination_tab .pag_next .detls {
+    width: 25vw;
+}
+.mbp_pagination_tab .pag_prev .detls p, .mbp_pagination_tab .pag_next .detls p {
+    font-size: 14px;
+    line-height: 1.2;
+}
+.mbp_pagination_tab .container {
+    max-width: 95%;
+}
+}
+@media screen and (max-width:600px){
+.pag_prev {
+    display: none !important;
+}
+.mbp_pagination_tab .col-sm-6 {
+    width: 100%;
+}
+.mbp_pagination_tab .pag_prev .detls, .mbp_pagination_tab .pag_next .detls {
+    width: auto;
+    text-align: left;
+}
+.pag_next.text-left.float-end {
+    width: 100%;
+}
+}
+
+/*== End of Next Prev Pagination Blog Sinlge Page ==*/
 
 /* ---------------------------------------------------
     TOUR 306
@@ -10141,6 +10206,119 @@ Video area Css
   color: #ddd;
 }
 
+.badgearea {
+    text-align: center;
+    width:150px;
+}
+.badgearea img {
+    width:100%;
+    margin: 0 auto;
+}
+
+/******************Donation Area***************/
+.donationsection{
+    background:#FFF;
+    position:fixed;
+    min-width:400px;
+    max-width:35%;
+    padding:30px;
+    bottom:20px;
+    right:20px;
+    border-radius:20px;
+    z-index:99;
+
+     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12)
+}
+.donationsection .card{
+    position: relative;
+    border:none;
+    padding-left:60px;
+}
+.donationsection .card h2{
+    font-size:18px;
+    margin-bottom:15px;
+}
+.donationsection .card p{
+    font-size:13px;
+    margin-bottom:15px;
+}
+.donationsection .card a.btn.btn-primary{
+    padding:10px 30px;
+    display: inline-block;
+    width: auto;
+    border-radius:30px;
+}
+.donationsection .card ul li{
+    display: inline-block;
+    margin:15px 0 10px;
+    font-size:12px;
+}
+.donationsection .card ul li:before{
+    content:"|";
+    position: relative;
+    margin:0 5px;
+}
+.donationsection .card ul li:first-child:before{
+    content:"";
+    margin:0;
+}
+.donationsection .card ul li a{
+    text-decoration: underline;
+}
+.userimage{
+    position:absolute;
+    left:-80px;
+    top:-40px;
+    background:#FFF;
+    padding:5px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    border-radius:50%;
+}
+.userimage img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
+.modal-donate .form-group{
+    margin:10px 0;
+}
+.modal-donate .form-group button{
+    border:1px solid rgba(0, 0, 0, 0.3);
+    border-radius:30px;
+    margin-right:10px;
+}
+.modal-donate .form-group button:hover{
+    background:#006aff;
+    border-color:#006aff;
+    color:#FFF;
+}
+.modal-donate .form-group input{
+    border:1px solid rgba(0, 0, 0, 0.3);
+    border-radius:30px;
+    font-size:14px;
+    height:40px;
+}
+.modal-donate h3{
+    font-size:18px;
+    color:#006aff;
+    text-transform: uppercase;
+}
+.modal-donate .close{
+    background: transparent;
+    font-size:22px;
+}
+.modal-donate .close:hover{
+    background: transparent;
+    color:#006aff;
+}
+/****************** End Donation Area***************/
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -10411,6 +10589,27 @@ blockquote {
 .inner-banner {
     padding-top: 240px;
 }
+
+
+.our-agent-single .feat_property.list {
+    display: block !important;
+}
+.our-agent-single .feat_property.list .thumb {
+    width: 100%;
+}
+.feat_property.list .details {
+    position: relative;
+    width: 100%;
+}
+.badgearea img {
+    width: 90%;
+}
+/*.feat_property.list .details .tc_content {
+    display: block !important;
+}
+.badgearea img {
+    width: 50%;
+}*/
 }
 @media screen and (max-width:575px){
 .tour-btn {
